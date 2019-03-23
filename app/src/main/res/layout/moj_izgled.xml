@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -11,32 +12,33 @@
 
         android:layout_margin="10dp"
 
-        android:maxHeight="300dp"
-        android:maxWidth="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
 
-        app:layout_constraintRight_toLeftOf="@+id/licniPodaciFrejm"
+        android:layout_marginTop="16dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        app:layout_constraintRight_toLeftOf="@+id/linearniPrikaz"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--'android:layout_margin="10dp"' dodaje prostor sa svih strana, umjesto
     da i za desno, lijevo, gore i dole mora se "margin" posebno namjestiti, isto
     vrijedi i za "padding"-->
 
-    <FrameLayout
-        android:id="@+id/licniPodaciFrejm"
+    <LinearLayout
+        android:id="@+id/linearniPrikaz"
 
         android:layout_width="wrap_content"
-        android:layout_height="@+id/slika"
-        android:height="200dp"
-        android:width="100dp"
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/slika"
         app:layout_constraintStart_toEndOf="@id/slika"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/slika">
+        app:layout_constraintTop_toTopOf="@id/slika"
+        app:layout_constraintBottom_toBottomOf="@+id/slika"
+        android:background="@drawable/okvir">
 
         <TextView
             android:id="@+id/zanr"
@@ -48,7 +50,6 @@
             android:height="50dp"
 
             android:background="@drawable/okvir"
-            android:gravity="center_vertical"
 
             android:padding="5dp"
 
@@ -57,7 +58,8 @@
             android:textSize="20sp"
 
             app:layout_constraintBottom_toTopOf="@+id/ime"
-            app:layout_constraintTop_toTopOf="@+id/frejmListe"/>
+            app:layout_constraintTop_toTopOf="@+id/frejmListe"
+            tools:layout_editor_absoluteX="280dp" />
 
         <TextView
             android:id="@+id/ime"
@@ -65,40 +67,43 @@
             android:layout_height="wrap_content"
 
             android:layout_margin="5dp"
-            android:gravity="center_vertical"
-
             android:width="100dp"
+
             android:height="50dp"
+            android:background="@drawable/okvir"
+
+            android:gravity="center_vertical"
 
             android:padding="5dp"
 
             android:singleLine="true"
 
             android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/prezime"
 
-            app:layout_constraintTop_toBottomOf="@id/zanr"
-
-            android:background="@drawable/okvir"/>
+            app:layout_constraintTop_toBottomOf="@+id/zanr" />
 
         <TextView
             android:id="@+id/prezime"
 
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
             android:layout_margin="5dp"
 
             android:width="100dp"
             android:height="50dp"
 
+            android:background="@drawable/okvir"
+
             android:padding="5dp"
 
             android:singleLine="true"
 
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottonOf="@+id/licniPodaciFrejm"
+            app:layout_constraintTop_toBottomOf="@+id/ime" />
+    </LinearLayout>
 
-            app:layout_constraintTop_toBottomOf="@id/ime"
-            android:background="@drawable/okvir"/>
-    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

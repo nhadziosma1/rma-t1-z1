@@ -38,24 +38,28 @@ public class MainActivity extends AppCompatActivity
         //ulancaniAdapter = new ArrayAdapter(getBaseContext(), android.R.layout.simple_list_item_1, unosiKorisnika);
 
         //treci parametar konstruktora: The id of the TextView within the layout resource to be populated
-        ulancaniAdapter = new ArrayAdapter(getBaseContext(), R.layout.moj_izgled, R.id.tekstULejautu, unosiKorisnika);
+        ulancaniAdapter = new ArrayAdapter(getBaseContext(), R.layout.moj_izgled, unosiKorisnika);
 
         lvLista.setAdapter(ulancaniAdapter);
 
-        Muzicar HimzoPolovina = new Muzicar("Himzo", "Polovina", "folk", "ja sam taj");
-        Muzicar HalidBeslic = new Muzicar ("Halid", "Beslic", "folk", "kralj sevdaha");
-        Muzicar MichaelJackson = new Muzicar("Michael", "Jackson", "pop", "kralj popa");
-        Muzicar Shakira = new Muzicar("Shakira", "Ciganka", "pop", "waka naka");
-        Muzicar BonJovi = new Muzicar("Bon", "Jovi", "rock", "its my life");
-
-        unosiKorisnika.add(HimzoPolovina);
+        final Muzicar HimzoPolovina = new Muzicar("Himzo", "Polovina", "folk", "ja sam taj");
+        final Muzicar HalidBeslic = new Muzicar ("Halid", "Beslic", "folk", "kralj sevdaha");
+        final Muzicar MichaelJackson = new Muzicar("Michael", "Jackson", "pop", "kralj popa");
+        final Muzicar Shakira = new Muzicar("Shakira", "Ciganka", "pop", "waka naka");
+        final Muzicar BonJovi = new Muzicar("Bon", "Jovi", "rock", "its my life");
+        final Muzicar SejoSekson = new Muzicar("Sejo", "Sekson", "rock", "lutka s naslovne");
 
         dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
 
-                unosiKorisnika.add(editujMe.getText().toString());
+                unosiKorisnika.add(HimzoPolovina);
+                unosiKorisnika.add(HalidBeslic);
+                unosiKorisnika.add(MichaelJackson);
+                unosiKorisnika.add(Shakira);
+                unosiKorisnika.add(BonJovi);
+                unosiKorisnika.add(SejoSekson);
 
                 ulancaniAdapter.notifyDataSetChanged();
             }

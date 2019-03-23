@@ -2,11 +2,29 @@ package ba.unsa.etf.rma.rma_t1_z1;
 
 public class Muzicar
 {
+    public enum Zanr
+    {
+        POP("pop"), FOLK("folk"), ROCK("rock"), RAP("rap"), JAZZ("jezz");
+
+        private String imeZanra;
+
+        private Zanr(String s)  //kostruktor enuma ne moze primati enum
+        {
+            imeZanra = s;
+        }
+
+        public String getImeZanra()
+        {
+            return imeZanra;
+        }
+    }
+
     //ATRIBUTI
-    private String ime, prezime, zanr, cv;
+    private String ime, prezime, cv;
+    private Zanr zanr;
 
     //KONSTRUKTORI
-    public Muzicar(String ime, String prezime, String zanr, String cv) {
+    public Muzicar(String ime, String prezime, Zanr zanr, String cv) {
         this.ime = ime;
         this.prezime = prezime;
         this.zanr = zanr;
@@ -30,14 +48,6 @@ public class Muzicar
         this.prezime = prezime;
     }
 
-    public String getZanr() {
-        return zanr;
-    }
-
-    public void setZanr(String zanr) {
-        this.zanr = zanr;
-    }
-
     public String getCv() {
         return cv;
     }
@@ -45,4 +55,13 @@ public class Muzicar
     public void setCv(String cv) {
         this.cv = cv;
     }
+
+    public Zanr getZanr() {
+        return zanr;
+    }
+
+    public void setZanr(Zanr zanr) {
+        this.zanr = zanr;
+    }
+
 }
