@@ -102,12 +102,13 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
             muzicar = ( Muzicar ) data.get( position );
 
             /************  Set Model values in Holder elements ***********/
-            holder.zanr.setText( muzicar.getIme() );
+            holder.zanr.setText( muzicar.getZanr().getImeZanra() );
             holder.ime.setText( muzicar.getIme() );
             holder.prezime.setText( muzicar.getPrezime() );
 
             holder.slika.setImageResource(
-                    res.getIdentifier("com.androidexample.customlistview:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
+                                            //ime paketa
+                    res.getIdentifier("ba.unsa.etf.rma_t1_z1:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
 
             /******** Set Item Click Listner for LayoutInflater for each row *******/
 

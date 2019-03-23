@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:layout_margin="20dp">
+    android:layout_margin="10dp">
 
     <Button
         android:id="@+id/dugmeDodaj"
@@ -20,6 +20,7 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/frejmListe"
+        android:text="@string/unesi"
         />
 
     <EditText
@@ -27,6 +28,10 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_margin="5dp"
+
+        android:width="100dp"
 
         app:layout_constraintStart_toEndOf="@id/dugmeDodaj"
         app:layout_constraintBottom_toTopOf="@id/frejmListe"
