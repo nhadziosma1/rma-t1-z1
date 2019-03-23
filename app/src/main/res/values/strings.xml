@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">rma-t1-z1</string>
+
+    <string name="tekst">tekst</string>
+    <string name="zanr">zanr</string>
+    <string name="cv">cv</string>
+</resources>
