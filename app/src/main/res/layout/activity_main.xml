@@ -21,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/frejmListe"
         android:text="@string/unesi"
-        android:onClick="@kliknuoDugme"
         />
 
     <EditText

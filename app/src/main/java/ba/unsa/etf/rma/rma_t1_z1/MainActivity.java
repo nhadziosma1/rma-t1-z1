@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity
         mojAdapter = new MojAdapter(this, unosiKorisnika , getResources());
         lvLista.setAdapter( mojAdapter );
 
-        dugmeDodaj.setOnClickListener(new View.OnClickListener()
+        /*dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 mojAdapter.notifyDataSetChanged();
             }
-        });
+        });*/
     }
 
 

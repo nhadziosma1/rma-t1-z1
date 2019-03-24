@@ -108,7 +108,7 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
 
             holder.slika.setImageResource(
                                             //ime paketa
-                    res.getIdentifier("ba.unsa.etf.rma_t1_z1:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
+                    res.getIdentifier("ba.unsa.etf.rma.rma_t1_z1:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
 
             /******** Set Item Click Listner for LayoutInflater for each row *******/
             vi.setOnClickListener(new OnItemClickListener( position ));

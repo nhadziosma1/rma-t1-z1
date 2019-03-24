@@ -17,11 +17,13 @@
 
         android:layout_marginTop="52dp"
         android:background="@drawable/okvir"
+
         android:maxWidth="300dp"
         android:maxHeight="300dp"
         app:layout_constraintRight_toLeftOf="@+id/linearniPrikaz"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <!--'android:layout_margin="10dp"' dodaje prostor sa svih strana, umjesto
     da i za desno, lijevo, gore i dole mora se "margin" posebno namjestiti, isto
