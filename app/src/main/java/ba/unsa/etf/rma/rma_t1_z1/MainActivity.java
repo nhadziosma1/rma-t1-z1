@@ -35,21 +35,21 @@ public class MainActivity extends AppCompatActivity
         lvLista = (ListView) findViewById(R.id.lista);
         editujMe = (EditText) findViewById(R.id.editujMe);
 
+
         //mAct = this;
         napuniListuPodacima();
-
 
         mojAdapter = new MojAdapter(this, unosiKorisnika , getResources());
         lvLista.setAdapter( mojAdapter );
 
-        dugmeDodaj.setOnClickListener(new View.OnClickListener()
+        /*dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 mojAdapter.notifyDataSetChanged();
             }
-        });
+        });*/
     }
 
     public void onItemClick(int mPosition)

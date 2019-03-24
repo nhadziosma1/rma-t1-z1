@@ -1,10 +1,12 @@
 package ba.unsa.etf.rma.rma_t1_z1;
 
+import java.util.ArrayList;
+
 public class Muzicar
 {
     public enum Zanr
     {
-        POP("pop"), FOLK("folk"), ROCK("rock"), RAP("rap"), JAZZ("jezz");
+        POP("pop"), FOLK("folk"), ROCK("rock"), RAP("rap"), JAZZ("jazz");
 
         private String imeZanra;
 
@@ -22,9 +24,11 @@ public class Muzicar
     //ATRIBUTI
     private String ime, prezime, cv;
     private Zanr zanr;
+    private ArrayList<String> najpoznatijePjesem = new ArrayList<>();
 
     //KONSTRUKTORI
-    public Muzicar(String ime, String prezime, Zanr zanr, String cv) {
+    public Muzicar(String ime, String prezime, Zanr zanr, String cv)
+    {
         this.ime = ime;
         this.prezime = prezime;
         this.zanr = zanr;
