@@ -1,5 +1,6 @@
 package ba.unsa.etf.rma.rma_t1_z1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,15 +43,17 @@ public class MainActivity extends AppCompatActivity
         mojAdapter = new MojAdapter(this, unosiKorisnika , getResources());
         lvLista.setAdapter( mojAdapter );
 
-        /*dugmeDodaj.setOnClickListener(new View.OnClickListener()
+        dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
                 mojAdapter.notifyDataSetChanged();
             }
-        });*/
+        });
     }
+
+
 
     public void onItemClick(int mPosition)
     {
