@@ -10,20 +10,32 @@ import java.util.ArrayList;
 public class MuzicarActivity extends AppCompatActivity
 {
 
+    //ATRIBUTI
     private ImageView mprSlika;
     private TextView mprIme;
     private TextView mprPrezime;
     private TextView mprZanr;
-    private ArrayList<String> mprLista = new ArrayList<>();
+    private ArrayList<String> mprListaPjesama = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_muzicar);
+
         mprIme = (TextView) findViewById(R.id.mprIme);
         mprPrezime = (TextView) findViewById(R.id.mprPrezime);
         mprZanr = (TextView) findViewById(R.id.mprZanr);
         mprSlika = (ImageView) findViewById(R.id.mprSlika);
+
+        mprSlika.
+
+        //ovdje se navodi kljuc stringa koji je proslijedjen kao
+        mprIme.setText(getIntent().getStringExtra("mprIme"));
+        mprPrezime.setText(getIntent().getStringExtra("kljucPrezime"));
+        mprZanr.setText(getIntent().getStringExtra("kljucZanr"));
     }
+
+
+
 }

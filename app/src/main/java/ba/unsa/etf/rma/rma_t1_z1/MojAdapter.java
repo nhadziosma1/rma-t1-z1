@@ -111,7 +111,7 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
                     res.getIdentifier("ba.unsa.etf.rma.rma_t1_z1:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
 
             /******** Set Item Click Listner for LayoutInflater for each row *******/
-            vi.setOnClickListener(new OnItemClickListener( position ));
+            //vi.setOnClickListener(new OnItemClickListener( position ));
         }
         return vi;
     }
@@ -123,7 +123,7 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
     }
 
     /********* Called when Item click in ListView ************/
-    private class OnItemClickListener  implements View.OnClickListener
+    /*private class OnItemClickListener  implements View.OnClickListener
     {
         private int mPosition;
 
@@ -137,9 +137,9 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
         {
             MainActivity prozor = (MainActivity) activity;
 
-            /****  Call  onItemClick Method inside CustomListViewAndroidExample Class ( See Below )****/
+            //  Call  onItemClick Method inside CustomListViewAndroidExample Class ( See Below )
             prozor.onItemClick(mPosition);
         }
-    }
+    }*/
 }
 

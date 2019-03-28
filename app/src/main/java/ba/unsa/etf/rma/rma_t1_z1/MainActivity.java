@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -31,17 +32,32 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //predlaze id-eve svih elemenata sa prozaora kao upises "R.id. "
+        //predlaze id-eve svih elemenata sa prozora kad upises "R.id. "
         dugmeDodaj = (Button) findViewById(R.id.dugmeDodaj);
         lvLista = (ListView) findViewById(R.id.lista);
         editujMe = (EditText) findViewById(R.id.editujMe);
-
 
         //mAct = this;
         napuniListuPodacima();
 
         mojAdapter = new MojAdapter(this, unosiKorisnika , getResources());
         lvLista.setAdapter( mojAdapter );
+
+        lvLista.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                Intent mojIntent = new Intent(MainActivity.this, MuzicarActivity.class);
+
+                // "mprIme" je samo kljuc, ne mora se zvati isto kao i atribut aktivnosti
+                mojIntent.putExtra("mprIme", unosiKorisnika.get(position).getIme());
+                mojIntent.putExtra("kljucPrezime", unosiKorisnika.get(position).getPrezime());
+                mojIntent.putExtra("kljucZanr", unosiKorisnika.get(position).getZanr().getImeZanra());
+
+                MainActivity.this.startActivity(mojIntent);
+            }
+        });
 
         /*dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
@@ -55,13 +71,13 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    public void onItemClick(int mPosition)
+    /*public void onItemClick(int mPosition)
     {
         Muzicar muzicar = ( Muzicar ) unosiKorisnika.get(mPosition);
 
         // SHOW ALERT
         Toast.makeText(this, ""+muzicar.getIme() +" Image:"+muzicar.getZanr(), Toast.LENGTH_LONG).show();
-    }
+    }*/
 
     //samo za punjenjen liste pocetnim informacijama
     public void napuniListuPodacima()

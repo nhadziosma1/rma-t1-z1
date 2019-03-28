@@ -20,8 +20,11 @@
 
         android:maxWidth="300dp"
         android:maxHeight="300dp"
+
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintRight_toLeftOf="@+id/linearniPrikaz"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearniPrikaz"
         app:layout_constraintTop_toTopOf="parent"
         />
 
@@ -37,12 +40,10 @@
         android:background="@drawable/okvir"
 
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/slika"
+
+        app:layout_constraintStart_toEndOf="@+id/slika"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/slika"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@id/slika"
-        app:layout_constraintTop_toTopOf="@id/slika"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
@@ -61,6 +62,10 @@
             android:singleLine="true"
 
             android:textSize="20sp"
+
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/linearniPrikaz"
+            app:layout_constraintEnd_toStartOf="@+id/ime"
 
             app:layout_constraintBottom_toTopOf="@+id/ime"
             app:layout_constraintTop_toTopOf="@+id/frejmListe"
@@ -84,8 +89,10 @@
             android:singleLine="true"
 
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/prezime"
 
+            app:layout_constraintStart_toEndOf="@+id/zanr"
+            app:layout_constraintEnd_toStartOf="@+id/prezime"
+            app:layout_constraintBottom_toTopOf="@+id/prezime"
             app:layout_constraintTop_toBottomOf="@+id/zanr" />
 
         <TextView
@@ -107,6 +114,8 @@
 
             android:textSize="20sp"
 
+            app:layout_constraintStart_toEndOf="@+id/ime"
+            app:layout_constraintEnd_toEndOf="@+id/linearniPrikaz"
             app:layout_constraintTop_toBottomOf="@+id/ime" />
     </LinearLayout>
 
