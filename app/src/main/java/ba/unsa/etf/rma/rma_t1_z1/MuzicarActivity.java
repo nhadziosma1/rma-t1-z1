@@ -1,14 +1,20 @@
 package ba.unsa.etf.rma.rma_t1_z1;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -24,6 +30,8 @@ public class MuzicarActivity extends AppCompatActivity
     private TextView mprZanr;
     private TextView urlPjevaceveStranice;
     private ArrayList<String> mprListaPjesama = new ArrayList<>();
+
+    private int REQUEST_CAMERA = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,6 +53,33 @@ public class MuzicarActivity extends AppCompatActivity
 
         urlPjevaceveStranice = (TextView) findViewById(R.id.mprUrl);
         this.nadjiURL(mprIme.getText().toString(), mprPrezime.getText().toString());
+
+        // Here, thisActivity is the current activity
+        if (ContextCompat.checkSelfPermission(MuzicarActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
+        {
+            // Permission is not granted
+            // Should we show an explanation?
+            if ( ActivityCompat.shouldShowRequestPermissionRationale(MuzicarActivity.this, Manifest.permission.CAMERA))
+            {  //Build.VERSION.SDK_INT < 23
+
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+                Toast.makeText(this, "Camera permission is needed to show the camera privew", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                // No explanation needed, we can request the permission.
+                ActivityCompat.requestPermissions(MuzicarActivity.this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        } else {
+            // Permission has already been granted
+            urlPjevaceveStranice.setText("cuna, vec odobren pristup kameri");
+        }
 
         if(urlPjevaceveStranice.getText().toString().trim().length() > 0)
         {

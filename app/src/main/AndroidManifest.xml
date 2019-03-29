@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ba.unsa.etf.rma.rma_t1_z1">
 
+    <!--Bez ovog taga, nece biti moguce ood korisnika zatraziti pritup-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,18 +17,29 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <action android:name="android.intent.action.SEND" />
+                <data android:scheme="text/plain"/>
+                <data android:scheme="image/*"/>
+                
             </intent-filter>
         </activity>
 
         <activity android:name=".MuzicarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
     </application>
+
+    <!--"android.intent.action.MAIN" means that this activity is the entry point of the
+    application, i.e. when you launch the application, this activity is created.-->
+
+    <!--"android.intent.category.DEFAULT" is mainly used for implicit intents. If your activity wishes to be
+    started by an implicit intent it should include this catetory in its filter. If your Activity might be started
+     by an implicit Intent when no specific category is assigned to it, its Intent filter should include this category.-->
 
 </manifest>
