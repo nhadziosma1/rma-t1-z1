@@ -13,6 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!--"GTALK" je skracenica ga "Google Talk", poznat kao "Google Hangout"-->
+        <receiver android:name=".MojReciever"  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +31,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="android.intent.action.SEND" />
                 <data android:mimeType="text/plain"/>
-                <data android:mimeType="image/*"/>
             </intent-filter>
         </activity>
 
@@ -31,6 +38,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.SEND" />
+                <data android:mimeType="text/plain"/>
             </intent-filter>
         </activity>
 

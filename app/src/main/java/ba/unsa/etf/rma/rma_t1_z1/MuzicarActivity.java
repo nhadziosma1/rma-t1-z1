@@ -5,7 +5,9 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
@@ -41,6 +43,7 @@ public class MuzicarActivity extends AppCompatActivity
     private ArrayAdapter<String> adapterPjesama;
 
     private int REQUEST_CAMERA = 1;
+    private MojReciever mojRisiver = new MojReciever();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -147,12 +150,12 @@ public class MuzicarActivity extends AppCompatActivity
             {
                 Intent otvoriFB = new Intent();
                 otvoriFB.setAction(Intent.ACTION_SEND);
-                otvoriFB.putExtra(Intent.ACTION_VIEW,mprIme.toString()+" "+mprPrezime.toString());
+                otvoriFB.putExtra(Intent.ACTION_VIEW,"NESTOOOOO");
                 otvoriFB.setType("text/plain");
 
                 if(otvoriFB.resolveActivity(getPackageManager() ) != null)
                 {
-                    startActivity(otvoriFB);
+                    startActivity(otvoriFB.createChooser(otvoriFB, "Share"));
                 }
             }
         });
@@ -198,6 +201,22 @@ public class MuzicarActivity extends AppCompatActivity
             urlPjevaceveStranice.setText("https://www.youtube.com/watch?v=vmDDOFXSgAs");
     }
 
+
+    @Override
+    public void onStart()
+    {
+        super.onStart();
+
+        IntentFilter intent_filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(mojRisiver, intent_filter);
+    }
+
+    @Override
+    public void onStop()
+    {
+        super.onStop();
+        unregisterReceiver(mojRisiver);
+    }
 
 
 }
