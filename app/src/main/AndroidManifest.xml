@@ -22,8 +22,9 @@
                 <action android:name="android.intent.action.SEND" />
                 <data android:scheme="text/plain"/>
                 <data android:scheme="image/*"/>
-                
+
             </intent-filter>
+
         </activity>
 
         <activity android:name=".MuzicarActivity">

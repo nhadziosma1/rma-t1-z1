@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
+        if( getIntent().getAction() != null && getIntent().getAction().equals(Intent.ACTION_SEND))
+            editujMe.setText(getIntent().getData().toString());
+
         /*dugmeDodaj.setOnClickListener(new View.OnClickListener()
         {
             @Override
