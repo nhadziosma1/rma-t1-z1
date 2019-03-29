@@ -16,15 +16,15 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER"/>
-
-                <action android:name="android.intent.action.SEND" />
-                <data android:scheme="text/plain"/>
-                <data android:scheme="image/*"/>
-
             </intent-filter>
 
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.SEND" />
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
         </activity>
 
         <activity android:name=".MuzicarActivity">
@@ -35,6 +35,13 @@
         </activity>
 
     </application>
+
+    <!--NAPOMENA: vrlo je vazno za u tagu "data" bude "mimeType", a ne neki drugi-->
+
+    <!--Jedan activity moze imati vise "intent-filter" tagova u kojima se mogu nalaziti "action", "category" i "data" tagovi razliciti
+    od onih koji se nalaze u drugom "intent-filteru" istog aktivitija-->
+
+    <!--Kada su se nalazili u istom "inten-filteru" akcija "send" i  akcija "main" nije se app spasavala na mob -->
 
     <!--"android.intent.action.MAIN" means that this activity is the entry point of the
     application, i.e. when you launch the application, this activity is created.-->

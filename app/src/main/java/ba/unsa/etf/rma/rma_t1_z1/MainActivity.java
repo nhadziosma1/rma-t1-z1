@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
         lvLista = (ListView) findViewById(R.id.lista);
         editujMe = (EditText) findViewById(R.id.editujMe);
 
-        //mAct = this;
+
         napuniListuPodacima();
 
         mojAdapter = new MojAdapter(this, unosiKorisnika , getResources());
@@ -48,12 +48,15 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
+                //unutar Listenera moras koristit izraz "NazivActivitija.this" da bi dobio Context, ali
+                // za dobijanje konteksta u van njih, moze se pisati samo "this"
                 Intent mojIntent = new Intent(MainActivity.this, MuzicarActivity.class);
 
                 // "mprIme" je samo kljuc, ne mora se zvati isto kao i atribut aktivnosti
                 mojIntent.putExtra("mprIme", unosiKorisnika.get(position).getIme());
                 mojIntent.putExtra("kljucPrezime", unosiKorisnika.get(position).getPrezime());
                 mojIntent.putExtra("kljucZanr", unosiKorisnika.get(position).getZanr().getImeZanra());
+                mojIntent.putExtra("kljucTopPjesme", unosiKorisnika.get(position).getNajpoznatijePjesem());
 
                 MainActivity.this.startActivity(mojIntent);
             }
@@ -87,14 +90,23 @@ public class MainActivity extends AppCompatActivity
     public void napuniListuPodacima()
     {
         final Muzicar HimzoPolovina = new Muzicar("Himzo", "Polovina", Muzicar.Zanr.FOLK, "ja sam taj");
+        dodajNajpoznatijePjesme(HimzoPolovina);
         final Muzicar HalidBeslic = new Muzicar ("Halid", "Beslic", Muzicar.Zanr.FOLK, "kralj sevdaha");
+        dodajNajpoznatijePjesme(HalidBeslic);
         final Muzicar MichaelJackson = new Muzicar("Michael", "Jackson", Muzicar.Zanr.POP, "kralj popa");
+        dodajNajpoznatijePjesme(MichaelJackson);
         final Muzicar Shakira = new Muzicar("Shakira", "Ciganka", Muzicar.Zanr.POP, "waka naka");
+        dodajNajpoznatijePjesme(Shakira);
         final Muzicar BonJovi = new Muzicar("Bon", "Jovi", Muzicar.Zanr.ROCK, "its my life");
+        dodajNajpoznatijePjesme(BonJovi);
         final Muzicar SejoSekson = new Muzicar("Sejo", "Sekson", Muzicar.Zanr.ROCK, "lutka s naslovne");
+        dodajNajpoznatijePjesme(SejoSekson);
         final Muzicar SlimaShady = new Muzicar("Slim", "Shady", Muzicar.Zanr.RAP, "eminem");
+        dodajNajpoznatijePjesme(SlimaShady);
         final Muzicar EdoMajka = new Muzicar("Edo", "Majka", Muzicar.Zanr.RAP, "vratite nam Elvisa");
+        dodajNajpoznatijePjesme(EdoMajka);
         final Muzicar NekiPjevac = new Muzicar("Neki", "Pjevac", Muzicar.Zanr.JAZZ, "mambo no 5");
+        dodajNajpoznatijePjesme(NekiPjevac);
 
         unosiKorisnika.add(HimzoPolovina);
         unosiKorisnika.add(HalidBeslic);
@@ -105,5 +117,13 @@ public class MainActivity extends AppCompatActivity
         unosiKorisnika.add(SlimaShady);
         unosiKorisnika.add(EdoMajka);
         unosiKorisnika.add(NekiPjevac);
+    }
+
+    private void dodajNajpoznatijePjesme(Muzicar muzicar)
+    {
+        for(int i=0; i<10; i++)
+        {
+            muzicar.getNajpoznatijePjesem().add( muzicar.getIme()+muzicar.getPrezime()+i);
+        }
     }
 }

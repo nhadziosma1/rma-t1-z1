@@ -1,6 +1,8 @@
 package ba.unsa.etf.rma.rma_t1_z1;
 
 import android.Manifest;
+import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -12,7 +14,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,14 +27,16 @@ import java.util.ArrayList;
 
 public class MuzicarActivity extends AppCompatActivity
 {
-
     //ATRIBUTI
     private ImageView mprSlika;
     private TextView mprIme;
     private TextView mprPrezime;
     private TextView mprZanr;
     private TextView urlPjevaceveStranice;
-    private ArrayList<String> mprListaPjesama = new ArrayList<>();
+
+    private ArrayList<String> mprArrayPjesama = new ArrayList<>();
+    private ListView listaPjesama;
+    private ArrayAdapter<String> adapterPjesama;
 
     private int REQUEST_CAMERA = 1;
 
@@ -43,6 +50,7 @@ public class MuzicarActivity extends AppCompatActivity
         mprPrezime = (TextView) findViewById(R.id.mprPrezime);
         mprZanr = (TextView) findViewById(R.id.mprZanr);
         mprSlika = (ImageView) findViewById(R.id.mprSlika);
+        listaPjesama = (ListView) findViewById(R.id.mprLista);
 
         mprSlika.setImageResource(R.drawable.pop);
 
@@ -50,12 +58,16 @@ public class MuzicarActivity extends AppCompatActivity
         mprIme.setText(getIntent().getStringExtra("mprIme"));
         mprPrezime.setText(getIntent().getStringExtra("kljucPrezime"));
         mprZanr.setText(getIntent().getStringExtra("kljucZanr"));
+        mprArrayPjesama = getIntent().getStringArrayListExtra("kljucTopPjesme");
+
+        adapterPjesama = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mprArrayPjesama);
+        listaPjesama.setAdapter(adapterPjesama);
 
         urlPjevaceveStranice = (TextView) findViewById(R.id.mprUrl);
         this.nadjiURL(mprIme.getText().toString(), mprPrezime.getText().toString());
 
         // Here, thisActivity is the current activity
-        if (ContextCompat.checkSelfPermission(MuzicarActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
+        /*if (ContextCompat.checkSelfPermission(MuzicarActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
         {
             // Permission is not granted
             // Should we show an explanation?
@@ -79,7 +91,7 @@ public class MuzicarActivity extends AppCompatActivity
         } else {
             // Permission has already been granted
             urlPjevaceveStranice.setText("cuna, vec odobren pristup kameri");
-        }
+        }*/
 
         if(urlPjevaceveStranice.getText().toString().trim().length() > 0)
         {
@@ -116,6 +128,31 @@ public class MuzicarActivity extends AppCompatActivity
                     .show();
         }
 
+        listaPjesama.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                searchYoutubeVideo(MuzicarActivity.this, mprArrayPjesama.get(position)+" "+
+                        getIntent().getStringExtra("imeAutora"));
+            }
+        });
+
+    }
+
+    private void searchYoutubeVideo(Context context, String id)
+    {
+        Intent appIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + id));
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/results?search_query=" + id));
+
+        try
+        {
+            context.startActivity(appIntent);
+        }
+        catch (ActivityNotFoundException ex)
+        {
+            ex.printStackTrace();
+            context.startActivity(webIntent);
+        }
     }
 
     //ova funkcionalnost bi se puno ljepse obavila da imamo bazu iz koje dohvacamo ove informacije

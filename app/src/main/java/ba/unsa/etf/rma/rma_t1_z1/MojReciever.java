@@ -9,6 +9,9 @@ public class MojReciever extends BroadcastReceiver
     @Override
     public void onReceive(Context context, Intent intent)
     {
-
+        if( intent.getAction() != null && intent.getAction().equals(Intent.ACTION_SEND))
+        {
+            //this.startActivity(mojIntent);
+        }
     }
 }

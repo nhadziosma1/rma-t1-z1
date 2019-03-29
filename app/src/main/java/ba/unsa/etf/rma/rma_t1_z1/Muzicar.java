@@ -68,4 +68,14 @@ public class Muzicar
         this.zanr = zanr;
     }
 
+    public ArrayList<String> getNajpoznatijePjesem() {
+        return najpoznatijePjesem;
+    }
+
+    public void setNajpoznatijePjesem(ArrayList<String> najpoznatijePjesem) {
+        this.najpoznatijePjesem = najpoznatijePjesem;
+    }
+
+
+
 }

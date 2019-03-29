@@ -35,16 +35,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
 
-        app:layout_constraintTop_toBottomOf="@id/mprSlika"
-        app:layout_constraintBottom_toTopOf="@id/mprPrezime"
+        android:background="@color/svijetloPlava"
+        android:gravity="center_horizontal"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mprPrezime"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:background="@color/svijetloPlava"
+        app:layout_constraintHorizontal_bias="1.0"
 
-        android:gravity="center_horizontal"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mprSlika" />
 
     <!--Sa "gravity" atributom poravnava se text -->
     <TextView
@@ -55,15 +55,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="28dp"
 
-        app:layout_constraintTop_toBottomOf="@id/mprIme"
-        app:layout_constraintBottom_toTopOf="@id/mprZanr"
+        android:background="@color/svijetloPlava"
+        android:gravity="center_horizontal"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mprZanr"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:background="@color/svijetloPlava"
+        app:layout_constraintStart_toStartOf="parent"
 
-        android:gravity="center_horizontal"/>
+        app:layout_constraintTop_toBottomOf="@id/mprIme" />
 
     <TextView
         android:id="@+id/mprZanr"
@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toTopOf="@id/mprUrl"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.925"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mprPrezime" />
@@ -90,41 +90,40 @@
         android:id="@+id/mprUrl"
         android:layout_width="371dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
 
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
 
-        app:layout_constraintBottom_toTopOf="@id/mprLista"
+        app:layout_constraintBottom_toTopOf="@+id/mprFrejmListe"
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.4"
 
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@id/mprZanr" />
 
-    <LinearLayout
-        android:id="@+id/mprLista"
-        android:layout_width="375dp"
-        android:layout_height="343dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
 
-        app:layout_constraintTop_toBottomOf="@id/mprUrl"
+    <FrameLayout
+        android:id="@+id/mprFrejmListe"
+        android:layout_width="392dp"
+        android:layout_height="227dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:background="@color/narandzasta"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mprUrl">
+
+        <ListView
+            android:id="@+id/mprLista"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/okvir" />
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
