@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity
                 mojIntent.putExtra("kljucPrezime", unosiKorisnika.get(position).getPrezime());
                 mojIntent.putExtra("kljucZanr", unosiKorisnika.get(position).getZanr().getImeZanra());
                 mojIntent.putExtra("kljucTopPjesme", unosiKorisnika.get(position).getNajpoznatijePjesem());
+                mojIntent.putExtra("kljucCV", unosiKorisnika.get(position).getCv());
 
                 MainActivity.this.startActivity(mojIntent);
             }
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity
             }
         });*/
     }
-
 
 
     /*public void onItemClick(int mPosition)

@@ -27,13 +27,8 @@
 
     <TextView
         android:id="@+id/mprIme"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
 
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
@@ -49,11 +44,8 @@
     <!--Sa "gravity" atributom poravnava se text -->
     <TextView
         android:id="@+id/mprPrezime"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
 
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
@@ -67,13 +59,8 @@
 
     <TextView
         android:id="@+id/mprZanr"
-        android:layout_width="371dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
 
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
@@ -81,14 +68,14 @@
         app:layout_constraintBottom_toTopOf="@id/mprUrl"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.722"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mprPrezime" />
 
     <TextView
         android:id="@+id/mprUrl"
-        android:layout_width="371dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:background="@color/svijetloPlava"
@@ -109,9 +96,8 @@
         android:layout_height="227dp"
         android:layout_margin="20dp"
         android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/mprPodijeli"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mprUrl">
 
@@ -123,7 +109,18 @@
             android:layout_margin="20dp"
 
             android:background="@drawable/okvir" />
-
     </FrameLayout>
+
+    <Button
+        android:id="@+id/mprPodijeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/podijeli"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mprFrejmListe"
+        />
 
 </android.support.constraint.ConstraintLayout>

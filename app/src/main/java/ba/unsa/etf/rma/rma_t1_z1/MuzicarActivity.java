@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,6 +34,7 @@ public class MuzicarActivity extends AppCompatActivity
     private TextView mprPrezime;
     private TextView mprZanr;
     private TextView urlPjevaceveStranice;
+    private Button mprPodlijeliNaFb;
 
     private ArrayList<String> mprArrayPjesama = new ArrayList<>();
     private ListView listaPjesama;
@@ -51,6 +53,7 @@ public class MuzicarActivity extends AppCompatActivity
         mprZanr = (TextView) findViewById(R.id.mprZanr);
         mprSlika = (ImageView) findViewById(R.id.mprSlika);
         listaPjesama = (ListView) findViewById(R.id.mprLista);
+        mprPodlijeliNaFb = (Button) findViewById(R.id.mprPodijeli);
 
         mprSlika.setImageResource(R.drawable.pop);
 
@@ -134,6 +137,23 @@ public class MuzicarActivity extends AppCompatActivity
             {
                 searchYoutubeVideo(MuzicarActivity.this, mprArrayPjesama.get(position)+" "+
                         getIntent().getStringExtra("imeAutora"));
+            }
+        });
+
+        mprPodlijeliNaFb.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent otvoriFB = new Intent();
+                otvoriFB.setAction(Intent.ACTION_SEND);
+                otvoriFB.putExtra(Intent.ACTION_VIEW,mprIme.toString()+" "+mprPrezime.toString());
+                otvoriFB.setType("text/plain");
+
+                if(otvoriFB.resolveActivity(getPackageManager() ) != null)
+                {
+                    startActivity(otvoriFB);
+                }
             }
         });
 
