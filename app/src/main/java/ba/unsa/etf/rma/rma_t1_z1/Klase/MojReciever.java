@@ -1,4 +1,4 @@
-package ba.unsa.etf.rma.rma_t1_z1;
+package ba.unsa.etf.rma.rma_t1_z1.Klase;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

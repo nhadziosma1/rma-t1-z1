@@ -4,57 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_margin="10dp">
-
-    <Button
-        android:id="@+id/dugmeDodaj"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:minHeight="30dp"
-        android:minWidth="75dp"
-
-        android:layout_marginBottom="10dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/frejmListe"
-        android:text="@string/unesi"
-        />
-
-    <EditText
-        android:id="@+id/editujMe"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_margin="5dp"
-
-        android:width="100dp"
-
-        app:layout_constraintStart_toEndOf="@id/dugmeDodaj"
-        app:layout_constraintBottom_toTopOf="@id/frejmListe"
-
-        android:background="@color/svijetloPlava"/>
+    tools:context=".Aktivnosti.MainActivity"
+    >
 
     <FrameLayout
-        android:id="@+id/frejmListe"
-
+        android:id="@+id/frejmZaPrviFregment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        app:layout_constraintTop_toBottomOf="@+id/dugmeDodaj">
-
-
-        <ListView
-            android:id="@+id/lista"
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:layout_margin="20dp"
-            />
-    </FrameLayout>
+        android:layout_height="match_parent"/>
 
 </android.support.constraint.ConstraintLayout>

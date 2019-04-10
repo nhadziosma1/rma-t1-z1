@@ -1,17 +1,12 @@
-package ba.unsa.etf.rma.rma_t1_z1;
+package ba.unsa.etf.rma.rma_t1_z1.Aktivnosti;
 
-import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.Uri;
-import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,11 +17,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+
+import ba.unsa.etf.rma.rma_t1_z1.Klase.MojReciever;
+import ba.unsa.etf.rma.rma_t1_z1.R;
 
 public class MuzicarActivity extends AppCompatActivity
 {
@@ -44,6 +39,7 @@ public class MuzicarActivity extends AppCompatActivity
 
     private int REQUEST_CAMERA = 1;
     private MojReciever mojRisiver = new MojReciever();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -64,8 +60,11 @@ public class MuzicarActivity extends AppCompatActivity
         mprIme.setText(getIntent().getStringExtra("mprIme"));
         mprPrezime.setText(getIntent().getStringExtra("kljucPrezime"));
         mprZanr.setText(getIntent().getStringExtra("kljucZanr"));
-        mprArrayPjesama = getIntent().getStringArrayListExtra("kljucTopPjesme");
 
+
+       //proslijedjena je prozoru ArrayList iz Muzicar tipa "najpoznaitjePjesme", pa se ovom linijom dohvacaju te info
+        mprArrayPjesama = getIntent().getStringArrayListExtra("kljucTopPjesme");
+        //spajanje ArrayList i ListView-a
         adapterPjesama = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mprArrayPjesama);
         listaPjesama.setAdapter(adapterPjesama);
 

@@ -1,0 +1,6 @@
+tutorijal 3:
+-prebačeni izgledi aktivitija u izglede fragmenta, dok je u xml fajlove postavljen frejm ili dva frejma. Dva frejma stavljena u
+ xml fajl koji se prikazuje kada je ekran sirok 500dp ili vise, dok jedan fejm u xml fajl prozora manjee sirine. ONI SE ISTO ZOVU, TE
+ SE AUTOMATSKI VRŠI SELEKCIJA KOJI OD OVA DVA XML FAJLA CE BITI POZVANA AN OSNOVU VELIČINE EKRANA
+-izbacena povezivanja u glavnoj aktivnosti i aktivnosti o detaljima o muzicaru izmedju elementa koji su se prije nalazili u xml fajlovima koji
+ su imali sve elemnte, jer se sada ti fajlovi nalaze u xml fajlovima fragmenta, pa se u samim fragmentima i vrsi to povezivanje

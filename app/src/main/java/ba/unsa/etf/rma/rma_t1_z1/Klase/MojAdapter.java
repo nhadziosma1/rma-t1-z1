@@ -1,4 +1,4 @@
-package ba.unsa.etf.rma.rma_t1_z1;
+package ba.unsa.etf.rma.rma_t1_z1.Klase;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import ba.unsa.etf.rma.rma_t1_z1.R;
 
 public class MojAdapter extends BaseAdapter implements View.OnClickListener
 {
@@ -102,13 +104,13 @@ public class MojAdapter extends BaseAdapter implements View.OnClickListener
             muzicar = ( Muzicar ) data.get( position );
 
             /************  Set Model values in Holder elements ***********/
-            holder.zanr.setText( muzicar.getZanr().getImeZanra() );
+            holder.zanr.setText( muzicar.getZanr() );
             holder.ime.setText( muzicar.getIme() );
             holder.prezime.setText( muzicar.getPrezime() );
 
             holder.slika.setImageResource(
                                             //ime paketa
-                    res.getIdentifier("ba.unsa.etf.rma.rma_t1_z1:drawable/"+muzicar.getZanr().getImeZanra(),null,null));
+                   res.getIdentifier("ba.unsa.etf.rma.rma_t1_z1:drawable/"+muzicar.getZanr(),null,null));
 
             /******** Set Item Click Listner for LayoutInflater for each row *******/
             //vi.setOnClickListener(new OnItemClickListener( position ));

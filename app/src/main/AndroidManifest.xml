@@ -14,14 +14,14 @@
         android:theme="@style/AppTheme">
 
         <!--"GTALK" je skracenica ga "Google Talk", poznat kao "Google Hangout"-->
-        <receiver android:name=".MojReciever"  android:exported="true">
+        <receiver android:name=".Klase.MojReciever"  android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".Aktivnosti.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MuzicarActivity">
+        <activity android:name=".Aktivnosti.MuzicarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
