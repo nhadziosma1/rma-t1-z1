@@ -78,6 +78,14 @@ public class Muzicar implements Parcelable
         this.cv = cv;
     }
 
+    public Muzicar(String ime, String prezime, String zanr)
+    {
+        this.ime = ime;
+        this.prezime = prezime;
+        this.zanr = zanr;
+        this.cv = cv;
+    }
+
     //GETTERI I SETTERI ( III korak za Parcel interfejs
     public String getIme() {
         return ime;

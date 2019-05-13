@@ -1,0 +1,451 @@
+{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Halid&type=artist&market=US&offset=0&limit=20",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13264
+      },
+      "genres" : [ "sevdah", "turbo folk", "yugoslav rock" ],
+      "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+      "id" : "4F0b9Cx0VIVVOLFgehonr6",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/404a3b90f8914513848063b91c4053fce0949d23",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/70e90fe412faa0d6e8a15027d21948c844eafb1c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7aae16e5dac1796cc66b62aae6de0855251c062c",
+        "width" : 64
+      } ],
+      "name" : "Halid Bešlić",
+      "popularity" : 44,
+      "type" : "artist",
+      "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 4152
+      },
+      "genres" : [ "sevdah", "turbo folk" ],
+      "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+      "id" : "2S0auO8eVnyqwmNF5gIbmr",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bd01d757692adcda05741522525563590cc5d027",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/db7ee562ea95cfd9c4866598bbadc11b8323a573",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9be2ca6c87ffa4baeeb6ef23fff6ae7e952167d",
+        "width" : 64
+      } ],
+      "name" : "Halid Muslimovic",
+      "popularity" : 35,
+      "type" : "artist",
+      "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/20B7BjeKh3qKmhxBzFuIjp"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 585
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/20B7BjeKh3qKmhxBzFuIjp",
+      "id" : "20B7BjeKh3qKmhxBzFuIjp",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/462f116e74388f95d08d2904261c666e27bc779b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1353f80c562a1cf4f8b5f28c7a67bd642d0cde25",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d6aa0fe940a586c6adba21078b87a77c85576adc",
+        "width" : 64
+      } ],
+      "name" : "Halid Bešlić & Prijatelji",
+      "popularity" : 24,
+      "type" : "artist",
+      "uri" : "spotify:artist:20B7BjeKh3qKmhxBzFuIjp"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4UKsSdLCJIRS3dfxbYaJZT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4UKsSdLCJIRS3dfxbYaJZT",
+      "id" : "4UKsSdLCJIRS3dfxbYaJZT",
+      "images" : [ ],
+      "name" : "Halid Pestil",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:4UKsSdLCJIRS3dfxbYaJZT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4gi9N0jrVyDsbDFSx4QIQw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4gi9N0jrVyDsbDFSx4QIQw",
+      "id" : "4gi9N0jrVyDsbDFSx4QIQw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2733d3b7fe7cc9db0d9164f04e8b47dac1b1174a",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/612fb472c06af6e12f8fc79da727613bb0c36ed1",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ef47987b11d55f76ee0db8963aacff9b158fb7b9",
+        "width" : 64
+      } ],
+      "name" : "Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4gi9N0jrVyDsbDFSx4QIQw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0EhxKPjkcK3gKU5IRHgSyU"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0EhxKPjkcK3gKU5IRHgSyU",
+      "id" : "0EhxKPjkcK3gKU5IRHgSyU",
+      "images" : [ ],
+      "name" : "Muslimović Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0EhxKPjkcK3gKU5IRHgSyU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1gVi73No9W0yOXlC95nzvz"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1gVi73No9W0yOXlC95nzvz",
+      "id" : "1gVi73No9W0yOXlC95nzvz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b819328d35f57d154e64a44897a4ad8a21931bfd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/43889da4333568f123052cfba7fc1a8485646420",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9aaf64e84f66d6640791818d1c2cfe6f603c5d1b",
+        "width" : 64
+      } ],
+      "name" : "Halid Mujcinovic",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1gVi73No9W0yOXlC95nzvz"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2EVPwoM5yAkCNtwbBf1xtU"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2EVPwoM5yAkCNtwbBf1xtU",
+      "id" : "2EVPwoM5yAkCNtwbBf1xtU",
+      "images" : [ ],
+      "name" : "Halid Kahtani",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2EVPwoM5yAkCNtwbBf1xtU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2cjvvlHhYv0vX7vfddgJz8"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 7
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2cjvvlHhYv0vX7vfddgJz8",
+      "id" : "2cjvvlHhYv0vX7vfddgJz8",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d0ee2fe1bed5780f70d03f0fe081e33c9cbdeab9",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/b96524faf77508a7e2cd14dd702682c1ace97d69",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/7bba5a00bfbe31b3341772e9124371ce5b2abb0f",
+        "width" : 160
+      } ],
+      "name" : "Ubay Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2cjvvlHhYv0vX7vfddgJz8"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3i48fvw14o9Xe8ypgxwpct"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3i48fvw14o9Xe8ypgxwpct",
+      "id" : "3i48fvw14o9Xe8ypgxwpct",
+      "images" : [ ],
+      "name" : "Halid Daniel",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3i48fvw14o9Xe8ypgxwpct"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3oZF0p3bS08gRoAnDuMNRN"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3oZF0p3bS08gRoAnDuMNRN",
+      "id" : "3oZF0p3bS08gRoAnDuMNRN",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/30c276db89cb85c872459789e12c14681d787751",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/fffe0dfd6b8b43c7877c293f05b7faf8bad58b95",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68c6bddde8bd02578691432613ee70d78fa84593",
+        "width" : 64
+      } ],
+      "name" : "Fadzrul Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3oZF0p3bS08gRoAnDuMNRN"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45nfZAHTN8xcoXme6V4WUO"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45nfZAHTN8xcoXme6V4WUO",
+      "id" : "45nfZAHTN8xcoXme6V4WUO",
+      "images" : [ ],
+      "name" : "Halid Daniel",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45nfZAHTN8xcoXme6V4WUO"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4IRFrMYZEnOStSx5Ho8tTE"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4IRFrMYZEnOStSx5Ho8tTE",
+      "id" : "4IRFrMYZEnOStSx5Ho8tTE",
+      "images" : [ ],
+      "name" : "Halid Süleyman",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4IRFrMYZEnOStSx5Ho8tTE"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/66JfZBc9JzrB2ABpTHFV0x"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/66JfZBc9JzrB2ABpTHFV0x",
+      "id" : "66JfZBc9JzrB2ABpTHFV0x",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/50e9b254a75b7b013d0d19848f16b05ba98345ac",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c82dea3b3898b694317b8afc6f5a8633ec1ec1b0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9160f4cfc9c0ae237813e109766301f45cf7235",
+        "width" : 64
+      } ],
+      "name" : "Halid Music",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:66JfZBc9JzrB2ABpTHFV0x"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7czQPbv7GVtPMuf7BfQ29K"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 15
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7czQPbv7GVtPMuf7BfQ29K",
+      "id" : "7czQPbv7GVtPMuf7BfQ29K",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/da3a3931ed9cc23654466a764de3190852b701ce",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5d2d4271825f78d44b3dba3cedffc9dbca1a6f09",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/327b32e1a7dfe9ba2ea2139831b278efa157b06d",
+        "width" : 64
+      } ],
+      "name" : "Halid Beslic",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:7czQPbv7GVtPMuf7BfQ29K"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/07ZTKUTxVTA5F4TM5mOaxM"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/07ZTKUTxVTA5F4TM5mOaxM",
+      "id" : "07ZTKUTxVTA5F4TM5mOaxM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e41fa66efcefbca55532aede7d5d09292f4dddbc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/54568c648c87469129f717d12685228d4558496e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/69336faf0ece0fc51ad2ade141d08c1c71482ac5",
+        "width" : 64
+      } ],
+      "name" : "Halid & Sylvesta",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:07ZTKUTxVTA5F4TM5mOaxM"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3O44V9XhtchYKaJPVCcX0n"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3O44V9XhtchYKaJPVCcX0n",
+      "id" : "3O44V9XhtchYKaJPVCcX0n",
+      "images" : [ ],
+      "name" : "Halid El-Ramih",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3O44V9XhtchYKaJPVCcX0n"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5q4YfBWcQ3axIIfrtdj7Uv"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5q4YfBWcQ3axIIfrtdj7Uv",
+      "id" : "5q4YfBWcQ3axIIfrtdj7Uv",
+      "images" : [ ],
+      "name" : "Halid Beslic/Haris Dzinovic",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:5q4YfBWcQ3axIIfrtdj7Uv"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0azlEuPm3KjfBktNlDu23U"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0azlEuPm3KjfBktNlDu23U",
+      "id" : "0azlEuPm3KjfBktNlDu23U",
+      "images" : [ ],
+      "name" : "Mr. Marco i Halid Muslimović",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0azlEuPm3KjfBktNlDu23U"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1havcLPc6txOVkPIS1Ge96"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1havcLPc6txOVkPIS1Ge96",
+      "id" : "1havcLPc6txOVkPIS1Ge96",
+      "images" : [ ],
+      "name" : "Mr. Marco & Halid Muslimović",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1havcLPc6txOVkPIS1Ge96"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=Halid&type=artist&market=US&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 23
+  }
+}

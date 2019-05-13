@@ -152,8 +152,10 @@ public class MainActivity extends AppCompatActivity implements FragmentLista.OnI
     }
 
     @Override
-    public void onItemClicked(int pos)
+    public void onItemClicked(int pos, ArrayList<Muzicar> muzicari)
     {
+        unosiKorisnika = muzicari;
+
         //Priprema novog fragmenta FragmentDetalji
         Bundle arguments = new Bundle();
         arguments.putParcelable("muzicar", unosiKorisnika.get(pos));

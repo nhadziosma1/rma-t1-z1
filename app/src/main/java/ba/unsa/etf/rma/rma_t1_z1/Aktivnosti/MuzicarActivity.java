@@ -149,7 +149,7 @@ public class MuzicarActivity extends AppCompatActivity
             {
                 Intent otvoriFB = new Intent();
                 otvoriFB.setAction(Intent.ACTION_SEND);
-                otvoriFB.putExtra(Intent.ACTION_VIEW,"NESTOOOOO");
+                otvoriFB.putExtra(Intent.EXTRA_TEXT,"NESTOOOOO");
                 otvoriFB.setType("text/plain");
 
                 if(otvoriFB.resolveActivity(getPackageManager() ) != null)

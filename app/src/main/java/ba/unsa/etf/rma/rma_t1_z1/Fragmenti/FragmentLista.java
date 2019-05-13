@@ -17,9 +17,10 @@ import java.util.ArrayList;
 
 import ba.unsa.etf.rma.rma_t1_z1.Klase.MojAdapter;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
+import ba.unsa.etf.rma.rma_t1_z1.Klase.PretragaMuzicara;
 import ba.unsa.etf.rma.rma_t1_z1.R;
 
-public class FragmentLista extends Fragment
+public class FragmentLista extends Fragment implements PretragaMuzicara.OnMuzicarSearchDone
 {
     //ATRIBUTI
     private Button dugmeDodaj;
@@ -33,7 +34,7 @@ public class FragmentLista extends Fragment
     //interfejs se implementira u fragmetu roditeljske klase
     public interface OnItemClick
     {
-        public void onItemClicked(int pos);
+        public void onItemClicked(int pos, ArrayList<Muzicar> muzicari);
     }
 
     @Override
@@ -88,15 +89,29 @@ public class FragmentLista extends Fragment
                 {
                     //poziva se implementirana metoda početne aktivnosti iz interfejsa OnItemClick
                     //kao parametar se prosljeđuje pozicija u ListView-u na koju je korisnik kliknuo
-                    oic.onItemClicked(position);
+                    oic.onItemClicked(position, muzicari);
                 }
             });
+
+            dugmeDodaj.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v)
+                {
+                    if(editujMe.getText().toString().trim().equals("") == false)
+                    {
+                        new PretragaMuzicara((PretragaMuzicara.OnMuzicarSearchDone) FragmentLista.this).execute(editujMe.getText().toString().trim());
+                    }
+
+                }
+                });
         }
     }
 
-
-    public void onActivityStarted(Activity activity)
+    @Override
+    public void onDone(ArrayList<Muzicar> rezultatMuzicari)
     {
-
+        muzicari.addAll(rezultatMuzicari);
+        //muzicari.get(0).getIme().setText(muzicar.getIme());
     }
 }

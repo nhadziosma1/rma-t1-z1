@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ba.unsa.etf.rma.rma_t1_z1">
 
-    <!--Bez ovog taga, nece biti moguce ood korisnika zatraziti pritup-->
+    <!--Bez ovog taga, nece biti moguce od korisnika zatraziti pritup-->
     <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
