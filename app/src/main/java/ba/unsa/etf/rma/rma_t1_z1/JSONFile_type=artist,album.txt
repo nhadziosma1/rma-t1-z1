@@ -1,0 +1,1202 @@
+{
+  "albums" : {
+    "href" : "https://api.spotify.com/v1/search?query=Halid&type=album&market=US&offset=0&limit=20",
+    "items" : [ {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0KsiWjTdGnlh3NB0RHZY1a"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0KsiWjTdGnlh3NB0RHZY1a",
+      "id" : "0KsiWjTdGnlh3NB0RHZY1a",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/404a3b90f8914513848063b91c4053fce0949d23",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/70e90fe412faa0d6e8a15027d21948c844eafb1c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7aae16e5dac1796cc66b62aae6de0855251c062c",
+        "width" : 64
+      } ],
+      "name" : "Folk Zvijezde Zauvijek",
+      "release_date" : "2009-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 18,
+      "type" : "album",
+      "uri" : "spotify:album:0KsiWjTdGnlh3NB0RHZY1a"
+    },
+     ------------------------------------------------------------------- ja dodao da se lakse raspozanje granica
+     {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3SlrxlSoQdrK2RUC2jU30u"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3SlrxlSoQdrK2RUC2jU30u",
+      "id" : "3SlrxlSoQdrK2RUC2jU30u",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e7b3fe7ab8a6d76d3c3268a3b015904d8aa7054d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/89c0bb13286ab59fcf9f27d8ea3af4d0334357d3",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/cfb46c62cb04f74eadbb4aa732b2928e9e12f4f2",
+        "width" : 64
+      } ],
+      "name" : "Prvi Poljubac",
+      "release_date" : "2003-11-10",
+      "release_date_precision" : "day",
+      "total_tracks" : 14,
+      "type" : "album",
+      "uri" : "spotify:album:3SlrxlSoQdrK2RUC2jU30u"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0OQbBfva91YgUIIrbkBd9s"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0OQbBfva91YgUIIrbkBd9s",
+      "id" : "0OQbBfva91YgUIIrbkBd9s",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/7f6b277df22e8c2c8e48db379577d04d4aae5287",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5d293841372ba17aebcd4fc1a8f2bfc97fc129e0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ebb9adb9af6886189ead8ba22e2647e32e83ca9a",
+        "width" : 64
+      } ],
+      "name" : "Romanija",
+      "release_date" : "2013-10-29",
+      "release_date_precision" : "day",
+      "total_tracks" : 11,
+      "type" : "album",
+      "uri" : "spotify:album:0OQbBfva91YgUIIrbkBd9s"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/1nDoICVMFElcTSxVQBYjEo"
+      },
+      "href" : "https://api.spotify.com/v1/albums/1nDoICVMFElcTSxVQBYjEo",
+      "id" : "1nDoICVMFElcTSxVQBYjEo",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/76d3b5cc6b99e47ca67bb5b7e91e8565613e7432",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d9750ce4a430a81d5865f10f4dcd7cc1822fcb63",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/980f7064ec28d885f4da3297af790d4060a379cb",
+        "width" : 64
+      } ],
+      "name" : "Hitovi",
+      "release_date" : "2018-03-31",
+      "release_date_precision" : "day",
+      "total_tracks" : 21,
+      "type" : "album",
+      "uri" : "spotify:album:1nDoICVMFElcTSxVQBYjEo"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2ywD0SHAqFWZpPZj28DFTt"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2ywD0SHAqFWZpPZj28DFTt",
+      "id" : "2ywD0SHAqFWZpPZj28DFTt",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bd01d757692adcda05741522525563590cc5d027",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/db7ee562ea95cfd9c4866598bbadc11b8323a573",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9be2ca6c87ffa4baeeb6ef23fff6ae7e952167d",
+        "width" : 64
+      } ],
+      "name" : "50 Originalnih Hitova",
+      "release_date" : "2018-02-05",
+      "release_date_precision" : "day",
+      "total_tracks" : 50,
+      "type" : "album",
+      "uri" : "spotify:album:2ywD0SHAqFWZpPZj28DFTt"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2RNES4TdaAaFW16IyXduLv"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2RNES4TdaAaFW16IyXduLv",
+      "id" : "2RNES4TdaAaFW16IyXduLv",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2599fa72da919899879ea61f1e20bc843d427be7",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/cb9a395e68c7e9979655f19bb66a5637ffa5f4f0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9388535f4325503937952ee26b5f61002bdb1c08",
+        "width" : 64
+      } ],
+      "name" : "U ime ljubavi",
+      "release_date" : "2019-05-10",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:2RNES4TdaAaFW16IyXduLv"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5E7jZuxztJbkFB1SNHV26z"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5E7jZuxztJbkFB1SNHV26z",
+      "id" : "5E7jZuxztJbkFB1SNHV26z",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/c96403e5316b87ed0d48f815b25771ed8c600bb1",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/7123b19fd4b1e294596479cfc5289f98ae01fef7",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/257a9dbb2ca3cfc598e6af4314e19f6f6876739c",
+        "width" : 64
+      } ],
+      "name" : "Prvi poljubac",
+      "release_date" : "2019-05-10",
+      "release_date_precision" : "day",
+      "total_tracks" : 14,
+      "type" : "album",
+      "uri" : "spotify:album:5E7jZuxztJbkFB1SNHV26z"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3h6iqmdf5c3MRd7r2F8b7N"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3h6iqmdf5c3MRd7r2F8b7N",
+      "id" : "3h6iqmdf5c3MRd7r2F8b7N",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/a62af6856b26c8a37f343f2d6ae34dfd79ff3d06",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/84f388ad453a9646b5123a5e01b2baa4cfb59066",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/b3a71eb4036a9ff2fbbe4c8fd86a2d8441e4ff98",
+        "width" : 64
+      } ],
+      "name" : "Halid Muslimović",
+      "release_date" : "2001",
+      "release_date_precision" : "year",
+      "total_tracks" : 9,
+      "type" : "album",
+      "uri" : "spotify:album:3h6iqmdf5c3MRd7r2F8b7N"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2JvVPbmoqLgjkwhVXE20GR"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2JvVPbmoqLgjkwhVXE20GR",
+      "id" : "2JvVPbmoqLgjkwhVXE20GR",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/25858888035d80c8bdb89df32e1e61add1277afc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/3dd5e5663aca99d6b75e82a029da4089b062a86e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7ba69d979b6ffe395fa5989cb18e3800e0165773",
+        "width" : 64
+      } ],
+      "name" : "Greška najmilija",
+      "release_date" : "2008",
+      "release_date_precision" : "year",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:2JvVPbmoqLgjkwhVXE20GR"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5K77fypau2zQeqsSdj0EQ7"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5K77fypau2zQeqsSdj0EQ7",
+      "id" : "5K77fypau2zQeqsSdj0EQ7",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/96f3cb8f771a00b89df74bc13ed21e85f994dd65",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/4ed571d8574d3fe6fcf3f82fe9d59dd557b34213",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/a7a4f1df4bfbba9d3f4ce641f04910e5aff6e8a4",
+        "width" : 64
+      } ],
+      "name" : "Halid Beslic I Prijatelji (Live Skenderija 2000)",
+      "release_date" : "1978",
+      "release_date_precision" : "year",
+      "total_tracks" : 14,
+      "type" : "album",
+      "uri" : "spotify:album:5K77fypau2zQeqsSdj0EQ7"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4M82qFlTtdmPNiFvJus8LF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4M82qFlTtdmPNiFvJus8LF",
+      "id" : "4M82qFlTtdmPNiFvJus8LF",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d78c543af5466fe3f472f1e9a9161e4a8fe3d75b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/812eec1280b0d7000ed02f3ebb2b1c415f3cbc70",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d7352f42dcebf353c25c52905da49b5cf19f2018",
+        "width" : 64
+      } ],
+      "name" : "Opsesija",
+      "release_date" : "2004",
+      "release_date_precision" : "year",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:4M82qFlTtdmPNiFvJus8LF"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/20B7BjeKh3qKmhxBzFuIjp"
+        },
+        "href" : "https://api.spotify.com/v1/artists/20B7BjeKh3qKmhxBzFuIjp",
+        "id" : "20B7BjeKh3qKmhxBzFuIjp",
+        "name" : "Halid Bešlić & Prijatelji",
+        "type" : "artist",
+        "uri" : "spotify:artist:20B7BjeKh3qKmhxBzFuIjp"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/53o3DIfGBpE4jlmWXLE1hD"
+      },
+      "href" : "https://api.spotify.com/v1/albums/53o3DIfGBpE4jlmWXLE1hD",
+      "id" : "53o3DIfGBpE4jlmWXLE1hD",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/462f116e74388f95d08d2904261c666e27bc779b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1353f80c562a1cf4f8b5f28c7a67bd642d0cde25",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d6aa0fe940a586c6adba21078b87a77c85576adc",
+        "width" : 64
+      } ],
+      "name" : "Zetra Live",
+      "release_date" : "2004-03-02",
+      "release_date_precision" : "day",
+      "total_tracks" : 35,
+      "type" : "album",
+      "uri" : "spotify:album:53o3DIfGBpE4jlmWXLE1hD"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3HiCf09yuUexhrIRM1tO4d"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3HiCf09yuUexhrIRM1tO4d",
+      "id" : "3HiCf09yuUexhrIRM1tO4d",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/48345ce237e435b264f989892e447c8fc157370d",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/2b870aed4f8319831c8cbbabb88f853cc677757e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e4e47c3313e9c4f0e37dfafc789ad121b0088e35",
+        "width" : 64
+      } ],
+      "name" : "Zajedno Smo Jaci",
+      "release_date" : "1986-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 8,
+      "type" : "album",
+      "uri" : "spotify:album:3HiCf09yuUexhrIRM1tO4d"
+    }, {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2i52ruLKA4hOokxixAlbne"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2i52ruLKA4hOokxixAlbne",
+      "id" : "2i52ruLKA4hOokxixAlbne",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/4d844bf7f064f1d01b141113711a389eb37dbc37",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/61835790caaad7c902248c4ab6ebacbe103a6d9f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e99ebb2a70fa886370522e3ed82150d449ef8502",
+        "width" : 64
+      } ],
+      "name" : "Ne proklinjem te",
+      "release_date" : "2018-09-05",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:2i52ruLKA4hOokxixAlbne"
+    }, {
+      "album_type" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7MkQuTbbykpXaaMJGOngav"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7MkQuTbbykpXaaMJGOngav",
+      "id" : "7MkQuTbbykpXaaMJGOngav",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e6311d25e49c6c8e3fa9ccf930b76cc1f5f70775",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/e2b050a2d40b25f74629398c6b2ef4dd27fb8dea",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/f8c7027ccb3a6b4c937dd1adddd554a60d3fa9ca",
+        "width" : 64
+      } ],
+      "name" : "The Best Of",
+      "release_date" : "2018-03-25",
+      "release_date_precision" : "day",
+      "total_tracks" : 21,
+      "type" : "album",
+      "uri" : "spotify:album:7MkQuTbbykpXaaMJGOngav"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6dibQaRk9Vwj9lZ6BfY4Vr"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6dibQaRk9Vwj9lZ6BfY4Vr",
+      "id" : "6dibQaRk9Vwj9lZ6BfY4Vr",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bfbce42028f7a58d148acc38dfa0505c8a9f3e8f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1bb2f658769aab5e1b47d9b7210b9072a9b9369a",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ba619523550a5274939810d8ecb8b09d9b47d13c",
+        "width" : 64
+      } ],
+      "name" : "Live in Hollywood",
+      "release_date" : "2006-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 16,
+      "type" : "album",
+      "uri" : "spotify:album:6dibQaRk9Vwj9lZ6BfY4Vr"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+        "id" : "2S0auO8eVnyqwmNF5gIbmr",
+        "name" : "Halid Muslimovic",
+        "type" : "artist",
+        "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6BofIZoEx6G8JtzebspRQQ"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6BofIZoEx6G8JtzebspRQQ",
+      "id" : "6BofIZoEx6G8JtzebspRQQ",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/aa1d77823e4f809ceeb39e52502f08aff0bd41dd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c62d7295142c07eee844cc8b6ef588dde386ccad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/302d7d2eecc7b5a8e782df69fbbdf8fddd106d26",
+        "width" : 64
+      } ],
+      "name" : "Bolje svatovi",
+      "release_date" : "1998-06-27",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:6BofIZoEx6G8JtzebspRQQ"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+        "id" : "4F0b9Cx0VIVVOLFgehonr6",
+        "name" : "Halid Bešlić",
+        "type" : "artist",
+        "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6xOVBIdwQfpcuOH9vAnoGz"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6xOVBIdwQfpcuOH9vAnoGz",
+      "id" : "6xOVBIdwQfpcuOH9vAnoGz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/4c93c4b1eb3ae54a153e17c7eb067c4629eb4507",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/d1c99aadd30b5d444f897c85aac4dac813db6916",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/0430ec67108a9de5d64b49b725c15f12c67b3546",
+        "width" : 64
+      } ],
+      "name" : "U Ime Ljubavi",
+      "release_date" : "2000-11-10",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:6xOVBIdwQfpcuOH9vAnoGz"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3rzSVP5fBgI2FnUPLprvcW"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3rzSVP5fBgI2FnUPLprvcW",
+        "id" : "3rzSVP5fBgI2FnUPLprvcW",
+        "name" : "H30 / Haris Dzinovic / Hari Mata Hari / Halid Beslic",
+        "type" : "artist",
+        "uri" : "spotify:artist:3rzSVP5fBgI2FnUPLprvcW"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5NTd8mek7EClxScxGvlIdS"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5NTd8mek7EClxScxGvlIdS",
+      "id" : "5NTd8mek7EClxScxGvlIdS",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/6ff25424b05f7819aa09cd250db72010c7dd2b78",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/8d1c54a4cf1616439eecc5e817f8ad9fbe4579c7",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/1f0081b10a1deed5432ac511128eacc565ab9620",
+        "width" : 64
+      } ],
+      "name" : "H30 / Live in Hollywood",
+      "release_date" : "2007-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 49,
+      "type" : "album",
+      "uri" : "spotify:album:5NTd8mek7EClxScxGvlIdS"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/66JfZBc9JzrB2ABpTHFV0x"
+        },
+        "href" : "https://api.spotify.com/v1/artists/66JfZBc9JzrB2ABpTHFV0x",
+        "id" : "66JfZBc9JzrB2ABpTHFV0x",
+        "name" : "Halid Music",
+        "type" : "artist",
+        "uri" : "spotify:artist:66JfZBc9JzrB2ABpTHFV0x"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5FTJcOy5pmCjnbUGJbm3bv"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5FTJcOy5pmCjnbUGJbm3bv",
+      "id" : "5FTJcOy5pmCjnbUGJbm3bv",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/50e9b254a75b7b013d0d19848f16b05ba98345ac",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c82dea3b3898b694317b8afc6f5a8633ec1ec1b0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9160f4cfc9c0ae237813e109766301f45cf7235",
+        "width" : 64
+      } ],
+      "name" : "Halid Music",
+      "release_date" : "2014",
+      "release_date_precision" : "year",
+      "total_tracks" : 8,
+      "type" : "album",
+      "uri" : "spotify:album:5FTJcOy5pmCjnbUGJbm3bv"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=Halid&type=album&market=US&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 57
+  },
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Halid&type=artist&market=US&offset=0&limit=20",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4F0b9Cx0VIVVOLFgehonr6"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 13273
+      },
+      "genres" : [ "sevdah", "turbo folk", "yugoslav rock" ],
+      "href" : "https://api.spotify.com/v1/artists/4F0b9Cx0VIVVOLFgehonr6",
+      "id" : "4F0b9Cx0VIVVOLFgehonr6",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/404a3b90f8914513848063b91c4053fce0949d23",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/70e90fe412faa0d6e8a15027d21948c844eafb1c",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/7aae16e5dac1796cc66b62aae6de0855251c062c",
+        "width" : 64
+      } ],
+      "name" : "Halid Bešlić",
+      "popularity" : 44,
+      "type" : "artist",
+      "uri" : "spotify:artist:4F0b9Cx0VIVVOLFgehonr6"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2S0auO8eVnyqwmNF5gIbmr"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 4155
+      },
+      "genres" : [ "sevdah", "turbo folk" ],
+      "href" : "https://api.spotify.com/v1/artists/2S0auO8eVnyqwmNF5gIbmr",
+      "id" : "2S0auO8eVnyqwmNF5gIbmr",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/bd01d757692adcda05741522525563590cc5d027",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/db7ee562ea95cfd9c4866598bbadc11b8323a573",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9be2ca6c87ffa4baeeb6ef23fff6ae7e952167d",
+        "width" : 64
+      } ],
+      "name" : "Halid Muslimovic",
+      "popularity" : 35,
+      "type" : "artist",
+      "uri" : "spotify:artist:2S0auO8eVnyqwmNF5gIbmr"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/20B7BjeKh3qKmhxBzFuIjp"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 586
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/20B7BjeKh3qKmhxBzFuIjp",
+      "id" : "20B7BjeKh3qKmhxBzFuIjp",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/462f116e74388f95d08d2904261c666e27bc779b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1353f80c562a1cf4f8b5f28c7a67bd642d0cde25",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d6aa0fe940a586c6adba21078b87a77c85576adc",
+        "width" : 64
+      } ],
+      "name" : "Halid Bešlić & Prijatelji",
+      "popularity" : 24,
+      "type" : "artist",
+      "uri" : "spotify:artist:20B7BjeKh3qKmhxBzFuIjp"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4UKsSdLCJIRS3dfxbYaJZT"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4UKsSdLCJIRS3dfxbYaJZT",
+      "id" : "4UKsSdLCJIRS3dfxbYaJZT",
+      "images" : [ ],
+      "name" : "Halid Pestil",
+      "popularity" : 15,
+      "type" : "artist",
+      "uri" : "spotify:artist:4UKsSdLCJIRS3dfxbYaJZT"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4gi9N0jrVyDsbDFSx4QIQw"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4gi9N0jrVyDsbDFSx4QIQw",
+      "id" : "4gi9N0jrVyDsbDFSx4QIQw",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2733d3b7fe7cc9db0d9164f04e8b47dac1b1174a",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/612fb472c06af6e12f8fc79da727613bb0c36ed1",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ef47987b11d55f76ee0db8963aacff9b158fb7b9",
+        "width" : 64
+      } ],
+      "name" : "Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4gi9N0jrVyDsbDFSx4QIQw"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0EhxKPjkcK3gKU5IRHgSyU"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 5
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0EhxKPjkcK3gKU5IRHgSyU",
+      "id" : "0EhxKPjkcK3gKU5IRHgSyU",
+      "images" : [ ],
+      "name" : "Muslimović Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0EhxKPjkcK3gKU5IRHgSyU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1gVi73No9W0yOXlC95nzvz"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1gVi73No9W0yOXlC95nzvz",
+      "id" : "1gVi73No9W0yOXlC95nzvz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/b819328d35f57d154e64a44897a4ad8a21931bfd",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/43889da4333568f123052cfba7fc1a8485646420",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/9aaf64e84f66d6640791818d1c2cfe6f603c5d1b",
+        "width" : 64
+      } ],
+      "name" : "Halid Mujcinovic",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1gVi73No9W0yOXlC95nzvz"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2EVPwoM5yAkCNtwbBf1xtU"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2EVPwoM5yAkCNtwbBf1xtU",
+      "id" : "2EVPwoM5yAkCNtwbBf1xtU",
+      "images" : [ ],
+      "name" : "Halid Kahtani",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2EVPwoM5yAkCNtwbBf1xtU"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3i48fvw14o9Xe8ypgxwpct"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3i48fvw14o9Xe8ypgxwpct",
+      "id" : "3i48fvw14o9Xe8ypgxwpct",
+      "images" : [ ],
+      "name" : "Halid Daniel",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3i48fvw14o9Xe8ypgxwpct"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3oZF0p3bS08gRoAnDuMNRN"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3oZF0p3bS08gRoAnDuMNRN",
+      "id" : "3oZF0p3bS08gRoAnDuMNRN",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/30c276db89cb85c872459789e12c14681d787751",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/fffe0dfd6b8b43c7877c293f05b7faf8bad58b95",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/68c6bddde8bd02578691432613ee70d78fa84593",
+        "width" : 64
+      } ],
+      "name" : "Fadzrul Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3oZF0p3bS08gRoAnDuMNRN"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/45nfZAHTN8xcoXme6V4WUO"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/45nfZAHTN8xcoXme6V4WUO",
+      "id" : "45nfZAHTN8xcoXme6V4WUO",
+      "images" : [ ],
+      "name" : "Halid Daniel",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:45nfZAHTN8xcoXme6V4WUO"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4IRFrMYZEnOStSx5Ho8tTE"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 1
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/4IRFrMYZEnOStSx5Ho8tTE",
+      "id" : "4IRFrMYZEnOStSx5Ho8tTE",
+      "images" : [ ],
+      "name" : "Halid Süleyman",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:4IRFrMYZEnOStSx5Ho8tTE"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/66JfZBc9JzrB2ABpTHFV0x"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 8
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/66JfZBc9JzrB2ABpTHFV0x",
+      "id" : "66JfZBc9JzrB2ABpTHFV0x",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/50e9b254a75b7b013d0d19848f16b05ba98345ac",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/c82dea3b3898b694317b8afc6f5a8633ec1ec1b0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/d9160f4cfc9c0ae237813e109766301f45cf7235",
+        "width" : 64
+      } ],
+      "name" : "Halid Music",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:66JfZBc9JzrB2ABpTHFV0x"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7czQPbv7GVtPMuf7BfQ29K"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 15
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/7czQPbv7GVtPMuf7BfQ29K",
+      "id" : "7czQPbv7GVtPMuf7BfQ29K",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/da3a3931ed9cc23654466a764de3190852b701ce",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5d2d4271825f78d44b3dba3cedffc9dbca1a6f09",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/327b32e1a7dfe9ba2ea2139831b278efa157b06d",
+        "width" : 64
+      } ],
+      "name" : "Halid Beslic",
+      "popularity" : 5,
+      "type" : "artist",
+      "uri" : "spotify:artist:7czQPbv7GVtPMuf7BfQ29K"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2cjvvlHhYv0vX7vfddgJz8"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 7
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/2cjvvlHhYv0vX7vfddgJz8",
+      "id" : "2cjvvlHhYv0vX7vfddgJz8",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/d0ee2fe1bed5780f70d03f0fe081e33c9cbdeab9",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/b96524faf77508a7e2cd14dd702682c1ace97d69",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/7bba5a00bfbe31b3341772e9124371ce5b2abb0f",
+        "width" : 160
+      } ],
+      "name" : "Ubay Halid",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:2cjvvlHhYv0vX7vfddgJz8"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/07ZTKUTxVTA5F4TM5mOaxM"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/07ZTKUTxVTA5F4TM5mOaxM",
+      "id" : "07ZTKUTxVTA5F4TM5mOaxM",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/e41fa66efcefbca55532aede7d5d09292f4dddbc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/54568c648c87469129f717d12685228d4558496e",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/69336faf0ece0fc51ad2ade141d08c1c71482ac5",
+        "width" : 64
+      } ],
+      "name" : "Halid & Sylvesta",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:07ZTKUTxVTA5F4TM5mOaxM"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3O44V9XhtchYKaJPVCcX0n"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 2
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/3O44V9XhtchYKaJPVCcX0n",
+      "id" : "3O44V9XhtchYKaJPVCcX0n",
+      "images" : [ ],
+      "name" : "Halid El-Ramih",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:3O44V9XhtchYKaJPVCcX0n"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5q4YfBWcQ3axIIfrtdj7Uv"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 3
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/5q4YfBWcQ3axIIfrtdj7Uv",
+      "id" : "5q4YfBWcQ3axIIfrtdj7Uv",
+      "images" : [ ],
+      "name" : "Halid Beslic/Haris Dzinovic",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:5q4YfBWcQ3axIIfrtdj7Uv"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/0azlEuPm3KjfBktNlDu23U"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/0azlEuPm3KjfBktNlDu23U",
+      "id" : "0azlEuPm3KjfBktNlDu23U",
+      "images" : [ ],
+      "name" : "Mr. Marco i Halid Muslimović",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:0azlEuPm3KjfBktNlDu23U"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1havcLPc6txOVkPIS1Ge96"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 0
+      },
+      "genres" : [ ],
+      "href" : "https://api.spotify.com/v1/artists/1havcLPc6txOVkPIS1Ge96",
+      "id" : "1havcLPc6txOVkPIS1Ge96",
+      "images" : [ ],
+      "name" : "Mr. Marco & Halid Muslimović",
+      "popularity" : 0,
+      "type" : "artist",
+      "uri" : "spotify:artist:1havcLPc6txOVkPIS1Ge96"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=Halid&type=artist&market=US&offset=20&limit=20",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 23
+  }
+}

@@ -3,29 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="5"
+    android:background="@color/bijela"
+    >
 
     <ImageView
         android:id="@+id/slika"
         android:layout_width="180dp"
         android:layout_height="130dp"
 
-        android:layout_margin="10dp"
-
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-
-        android:layout_marginTop="52dp"
+        android:layout_margin="3dp"
         android:background="@drawable/okvir"
 
-        android:maxWidth="300dp"
-        android:maxHeight="300dp"
-
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintRight_toLeftOf="@+id/linearniPrikaz"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearniPrikaz"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_weight="2"
         />
 
     <!--'android:layout_margin="10dp"' dodaje prostor sa svih strana, umjesto
@@ -35,7 +32,7 @@
     <LinearLayout
         android:id="@+id/linearniPrikaz"
 
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/okvir"
 
@@ -44,16 +41,18 @@
         app:layout_constraintStart_toEndOf="@+id/slika"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_weight="3"
+
+        >
 
         <TextView
             android:id="@+id/zanr"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:layout_margin="5dp"
-            android:width="100dp"
-            android:height="50dp"
 
             android:background="@drawable/okvir"
 
@@ -69,17 +68,14 @@
 
             app:layout_constraintBottom_toTopOf="@+id/ime"
             app:layout_constraintTop_toTopOf="@+id/frejmListe"
-            tools:layout_editor_absoluteX="280dp" />
+            />
 
         <TextView
             android:id="@+id/ime"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:layout_margin="5dp"
-            android:width="100dp"
-
-            android:height="50dp"
             android:background="@drawable/okvir"
 
             android:gravity="center_vertical"
@@ -93,18 +89,16 @@
             app:layout_constraintStart_toEndOf="@+id/zanr"
             app:layout_constraintEnd_toStartOf="@+id/prezime"
             app:layout_constraintBottom_toTopOf="@+id/prezime"
-            app:layout_constraintTop_toBottomOf="@+id/zanr" />
+            app:layout_constraintTop_toBottomOf="@+id/zanr"
+            />
 
         <TextView
             android:id="@+id/prezime"
 
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:layout_margin="5dp"
-
-            android:width="100dp"
-            android:height="50dp"
 
             android:background="@drawable/okvir"
 
@@ -116,7 +110,8 @@
 
             app:layout_constraintStart_toEndOf="@+id/ime"
             app:layout_constraintEnd_toEndOf="@+id/linearniPrikaz"
-            app:layout_constraintTop_toBottomOf="@+id/ime" />
+            app:layout_constraintTop_toBottomOf="@+id/ime"
+            />
     </LinearLayout>
 
 

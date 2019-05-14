@@ -2,6 +2,7 @@ package ba.unsa.etf.rma.rma_t1_z1.Klase;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.widget.ImageView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,18 +27,21 @@ public class Muzicar implements Parcelable
     }*/
 
     //ATRIBUTI
-    private String ime, prezime, cv;
     //private Zanr zanr;
+    private String ime, prezime, cv;
     private String zanr;
     private ArrayList<String> najpoznatijePjesem = new ArrayList<>();
 
-    /*public Muzicar(String ime, String prezime, Zanr zanr, String cv)
-    {
-        this.ime = ime;
-        this.prezime = prezime;
-        this.zanr = zanr;
-        this.cv = cv;
-    }*/
+    private String urlZaSliku = "https://f4.bcbits.com/img/a0252633309_10.jpg";
+
+    public String getUrlZaSliku() {
+        return urlZaSliku;
+    }
+
+    public void setUrlZaSliku(String urlZaSliku) {
+        this.urlZaSliku = urlZaSliku;
+    }
+
 
     // I korak za Parcel interfejs
     // This is where you will write your member variables in Parcel. Here you
@@ -86,7 +90,7 @@ public class Muzicar implements Parcelable
         this.cv = cv;
     }
 
-    //GETTERI I SETTERI ( III korak za Parcel interfejs
+    //GETTERI I SETTERI ( III korak za Parcel interfejs)
     public String getIme() {
         return ime;
     }

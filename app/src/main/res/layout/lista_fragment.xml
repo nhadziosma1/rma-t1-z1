@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/dugmeDodaj"
@@ -10,36 +11,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:minHeight="30dp"
-        android:minWidth="75dp"
+        android:layout_margin="5dp"
 
-        android:layout_marginBottom="10dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/frejmListe"
         android:text="@string/unesi"
-        />
+        app:layout_constraintBottom_toBottomOf="@+id/editujMe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editujMe" />
 
     <EditText
         android:id="@+id/editujMe"
 
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
 
         android:layout_margin="5dp"
 
-        android:width="100dp"
-
-        app:layout_constraintStart_toEndOf="@id/dugmeDodaj"
+        android:background="@color/svijetloPlava"
         app:layout_constraintBottom_toTopOf="@id/frejmListe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dugmeDodaj"
 
-        android:background="@color/svijetloPlava"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/frejmListe"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_margin="3dp"
+        android:background="@drawable/okvir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/dugmeDodaj">
 
@@ -50,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-            android:layout_margin="20dp"
+            android:background="@color/svijetloPlava"
+            android:verticalSpacing="1dp"
             />
     </FrameLayout>
 

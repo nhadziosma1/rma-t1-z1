@@ -1,6 +1,8 @@
 package ba.unsa.etf.rma.rma_t1_z1.Klase;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -29,6 +31,8 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
     ArrayList<Muzicar> rezultatPretrage = new ArrayList<>();
     private OnMuzicarSearchDone pozivatelj;
 
+    Context kontekst;
+
     //INTERFEJS
     public interface OnMuzicarSearchDone
     {
@@ -36,10 +40,12 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
     }
 
     //KONSTRUKTOR
-    public PretragaMuzicara(OnMuzicarSearchDone p)
+    public PretragaMuzicara(OnMuzicarSearchDone p, Context context)
     {
         //"pozivatelj" se koristi kao referenca na objekat koji je koristen za kreiranje objekta tipa "PretragaMuzicar"
         pozivatelj = p;
+
+        kontekst = context;
     }
 
     //METODE
@@ -64,7 +70,7 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
             e.printStackTrace();
         }
 
-        String url1 = "https://api.spotify.com/v1/search?q="+query+"&type=artist";
+        String url1 = "https://api.spotify.com/v1/search?q="+query+"&type=artist,album";
 
         try
         {
@@ -79,7 +85,7 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
             // setting the Authorization header to be "Bearer", followed by a space, followed by the access token.
             //poziv ima oblik: "conn.setRequestProperty("Authorization", "Bearer " + accessToken);"
             urlConnection.setRequestProperty("Authorization", "Bearer "
-                    +"BQAFnNR01JaNqsS0H-K6FDNTttmgS8dTJw4emngEwYzvlzGAs79pyITZqlRms7sZaT7C8ZyRQmaTyGnZ-ql5-wKhiNhP-X5wdDV6FcSD5Gb7RFRm-Wi-TFbliugcqf09bZ_pwMhL73VG4pOmDjBcRUP2RdLIs5eENw");
+                    +"BQA4fxNCSKpXrSbQnrimH1ndEj5ImZPJO3LxqXFzOxDVpdMHZWKsuPkidiuk0svrphVJJQk27XiYEb1qdRWzWvGrYZ9sks5_0GumvyrNQ80mDC3pcrHe-1xMjijJEiH7piV6DKc7yCVPtW0DSpbm933pWs1xy2mCMA");
             //REZULTAT POZIVA WEB SERVISA JE INPUT STREAM
             InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 
@@ -100,27 +106,64 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
                 //Ovo uradite na sličan način kako ste radili i kada ste hardkodirali
                 //podatke samo što sada koristite stvarne podatke
 
+                JSONArray oSlici = jedanMuzicar.getJSONArray("images");
+                String urlSlike = "https://f4.bcbits.com/img/a0252633309_10.jpg"; //ovo je slika "no photo"
+
+                //provjera je neophodna jer za neke muzicare mozda nema slika, ali mora postojati dio "images"
+                if(oSlici.length() > 0)
+                {
+                    JSONObject detaljiOSlici = oSlici.getJSONObject(0);
+                    urlSlike = detaljiOSlici.getString("url");
+                }
+
+                //razdvajanje imena i prezimena
                 String[] imeIPrezime = name.split(" ");
 
+                Muzicar novi;
                 if(imeIPrezime.length == 2)
-                rezultatPretrage.add(new Muzicar(imeIPrezime[0], imeIPrezime[1],"POP"));
+                novi = new Muzicar(imeIPrezime[0], imeIPrezime[1],"POP");
                 else
-                    rezultatPretrage.add(new Muzicar(name, "","POP"));
+                    novi = new Muzicar(name, "","POP");
+
+                novi.setUrlZaSliku(urlSlike);
+
+                rezultatPretrage.add(novi);
             }
         }
         catch (MalformedURLException e)
         {
             e.printStackTrace();
+            //ispisiPoruku("MalformedURLException", e.getMessage());
         }
         catch (IOException e)
         {
             e.printStackTrace();
+            //ispisiPoruku("IOException", e.getMessage());
         }
         catch (JSONException e)
         {
             e.printStackTrace();
+            //ispisiPoruku("JSONException", e.getMessage());
         }
         return null;
+    }
+
+    //aplikacija se zamrszne kada se ova metoda pozove??????????????????????????????????????
+    private void ispisiPoruku(String imeIzuzetka, String porukaIzuzetka)
+    {
+        AlertDialog alertDialog = new AlertDialog.Builder(kontekst).create();
+        alertDialog.setTitle("IZUZETAK tipa: "+ imeIzuzetka);
+        alertDialog.setMessage("e.getMessage(): "+ porukaIzuzetka);
+
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+                        dialog.dismiss();
+                    }
+                });
+
+        alertDialog.show();
     }
 
     /*private void upisiUTxtFajl(String sadrzaj, Context c)

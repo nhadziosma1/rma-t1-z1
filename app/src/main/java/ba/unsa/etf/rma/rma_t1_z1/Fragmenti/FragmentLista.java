@@ -100,7 +100,8 @@ public class FragmentLista extends Fragment implements PretragaMuzicara.OnMuzica
                 {
                     if(editujMe.getText().toString().trim().equals("") == false)
                     {
-                        new PretragaMuzicara((PretragaMuzicara.OnMuzicarSearchDone) FragmentLista.this).execute(editujMe.getText().toString().trim());
+                        new PretragaMuzicara((PretragaMuzicara.OnMuzicarSearchDone) FragmentLista.this, getContext()).execute(editujMe.getText().toString().trim());
+                        adapter.notifyDataSetChanged();
                     }
 
                 }

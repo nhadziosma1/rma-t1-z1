@@ -2,7 +2,10 @@ package ba.unsa.etf.rma.rma_t1_z1.Fragmenti;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,7 +15,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
+import ba.unsa.etf.rma.rma_t1_z1.Klase.PretragaSlike;
 import ba.unsa.etf.rma.rma_t1_z1.R;
 
 public class FragmentDetaljiOMuzicaru extends Fragment
@@ -47,8 +57,42 @@ public class FragmentDetaljiOMuzicaru extends Fragment
             zanr.setBackgroundColor(Color.RED);
 
             //POSTAVLJANJE SLIKE U ZAVISNOSTI OD ELEMENTA
-            String imeSlike = muzicar.getZanr().toLowerCase().trim();
-            slika.setImageResource( getImageId(this.getContext(), imeSlike));
+            //String imeSlike = muzicar.getZanr().toLowerCase().trim();
+            //slika.setImageResource(getImageId(this.getContext(), imeSlike));
+
+            /*URL myUrl = null;
+            try
+            {
+                myUrl = new URL(muzicar.getUrlZaSliku());
+                InputStream inputStream = (InputStream)myUrl.getContent();
+                Drawable drawable = Drawable.createFromStream(inputStream, null);
+                slika.setImageDrawable(drawable);
+            }
+            catch (MalformedURLException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }*/
+
+            /*try
+            {
+                Bitmap bitmap = BitmapFactory.decodeStream((InputStream)new URL(muzicar.getUrlZaSliku()).getContent());
+                slika.setImageBitmap(bitmap);
+            }
+            catch (MalformedURLException e)
+            {
+                e.printStackTrace();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }*/
+            //loadImageFromURL(muzicar.getUrlZaSliku(), slika);
+
+            new PretragaSlike(slika).execute(muzicar.getUrlZaSliku());
 
             podijeli.setOnClickListener(new View.OnClickListener()
             {
@@ -75,4 +119,32 @@ public class FragmentDetaljiOMuzicaru extends Fragment
         return context.getResources().getIdentifier("drawable/" + imageName, null, context.getPackageName());
     }
 
+    //nETWORK ON MAIN THREAD EXCEPTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /*public boolean loadImageFromURL(String fileUrl, ImageView iv)
+    {
+        try
+        {
+
+            URL myFileUrl = new URL (fileUrl);
+            HttpURLConnection conn = (HttpURLConnection) myFileUrl.openConnection();
+            conn.setDoInput(true);
+            conn.connect();
+
+            InputStream is = conn.getInputStream();
+            iv.setImageBitmap(BitmapFactory.decodeStream(is));
+
+            return true;
+
+        }
+        catch (MalformedURLException e)
+        {
+            e.printStackTrace();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return false;
+    }*/
 }
