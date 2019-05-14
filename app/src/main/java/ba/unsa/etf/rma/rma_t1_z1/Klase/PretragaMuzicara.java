@@ -94,12 +94,16 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
             //upisiUTxtFajl(rezultat);
 
             JSONObject jo = new JSONObject(rezultat);
-            JSONObject nizMuzicara = jo.getJSONObject("artists");
-            JSONArray items = nizMuzicara.getJSONArray("items");
+            JSONObject pocetniElement = jo.getJSONObject("albums");
+            JSONArray nizAlbuma = pocetniElement.getJSONArray("items");
 
             for (int i = 0; i < 5; i++)
             {
-                JSONObject jedanMuzicar = items.getJSONObject(i);
+                JSONObject jedanAlbum = nizAlbuma.getJSONObject(i);
+                String imeAlbuma = jedanAlbum.getString("name");
+
+                JSONArray muzicariNaAlbumu = jedanAlbum.getJSONArray("artists");
+                JSONObject jedanMuzicar = muzicariNaAlbumu.getJSONObject(0);
                 String name = jedanMuzicar.getString("name");
                 String artist_ID = jedanMuzicar.getString("id");
                 //Ovdje trebate dodati kreiranje objekta Muzičara i dodavanje u listu

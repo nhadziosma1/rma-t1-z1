@@ -30,17 +30,12 @@ public class Muzicar implements Parcelable
     //private Zanr zanr;
     private String ime, prezime, cv;
     private String zanr;
+    private ArrayList<String> albumi = new ArrayList<>();
     private ArrayList<String> najpoznatijePjesem = new ArrayList<>();
 
     private String urlZaSliku = "https://f4.bcbits.com/img/a0252633309_10.jpg";
 
-    public String getUrlZaSliku() {
-        return urlZaSliku;
-    }
 
-    public void setUrlZaSliku(String urlZaSliku) {
-        this.urlZaSliku = urlZaSliku;
-    }
 
 
     // I korak za Parcel interfejs
@@ -113,6 +108,22 @@ public class Muzicar implements Parcelable
 
     public void setCv(String cv) {
         this.cv = cv;
+    }
+
+    public String getUrlZaSliku() {
+        return urlZaSliku;
+    }
+
+    public void setUrlZaSliku(String urlZaSliku) {
+        this.urlZaSliku = urlZaSliku;
+    }
+
+    public ArrayList<String> getAlbumi() {
+        return albumi;
+    }
+
+    public void setAlbumi(ArrayList<String> albumi) {
+        this.albumi = albumi;
     }
 
     /*public Zanr getZanr() {

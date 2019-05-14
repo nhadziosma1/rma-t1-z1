@@ -1,7 +1,9 @@
 {
   "albums" : {
     "href" : "https://api.spotify.com/v1/search?query=Halid&type=album&market=US&offset=0&limit=20",
-    "items" : [ {
+    "items" : [
+    -----------------------------------------------------
+    {
       "album_type" : "album",
       "artists" : [ {
         "external_urls" : {
