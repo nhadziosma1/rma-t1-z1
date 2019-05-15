@@ -1,4 +1,4 @@
-package ba.unsa.etf.rma.rma_t1_z1.Klase;
+package ba.unsa.etf.rma.rma_t1_z1.Adapteri;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
 import ba.unsa.etf.rma.rma_t1_z1.R;
 
 public class MojAdapter extends BaseAdapter implements View.OnClickListener

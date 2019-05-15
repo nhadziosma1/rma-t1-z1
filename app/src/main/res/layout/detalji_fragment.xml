@@ -8,11 +8,10 @@
         android:id="@+id/mprSlika"
         android:layout_width="280dp"
         android:layout_height="93dp"
+
         android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
 
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,10 +33,10 @@
         app:layout_constraintBottom_toTopOf="@id/mprPrezime"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="1.0"
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mprSlika" />
+        app:layout_constraintTop_toBottomOf="@id/mprSlika"
+        android:layout_margin="2dp"
+        />
 
     <!--Sa "gravity" atributom poravnava se text -->
     <TextView
@@ -53,7 +52,9 @@
 
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/mprIme" />
+        app:layout_constraintTop_toBottomOf="@id/mprIme"
+        android:layout_margin="2dp"
+        />
 
     <TextView
         android:id="@+id/mprZanr"
@@ -63,18 +64,18 @@
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
 
-        app:layout_constraintBottom_toTopOf="@id/mprUrl"
+        app:layout_constraintBottom_toTopOf="@id/lvAlbumi"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.722"
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mprPrezime" />
+        app:layout_constraintTop_toBottomOf="@id/mprPrezime"
+        android:layout_margin="2dp"
+        />
 
-    <TextView
-        android:id="@+id/mprUrl"
+    <ListView
+        android:id="@+id/lvAlbumi"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
 
         android:background="@color/svijetloPlava"
         android:gravity="center_horizontal"
@@ -85,7 +86,9 @@
 
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/mprZanr" />
+        app:layout_constraintTop_toBottomOf="@id/mprZanr"
+        android:layout_margin="2dp"
+        />
 
 
     <FrameLayout
@@ -97,7 +100,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/mprPodijeli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mprUrl">
+        app:layout_constraintTop_toBottomOf="@id/lvAlbumi"
+        >
 
         <ListView
             android:id="@+id/mprLista"
@@ -119,6 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mprFrejmListe"
+        android:layout_margin="2dp"
         />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "ba.unsa.etf.rma.rma_t1_z1"
-        minSdkVersion 23
+        minSdkVersion 27
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

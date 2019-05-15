@@ -30,13 +30,10 @@ public class Muzicar implements Parcelable
     //private Zanr zanr;
     private String ime, prezime, cv;
     private String zanr;
-    private ArrayList<String> albumi = new ArrayList<>();
+    private ArrayList<Album> albumi = new ArrayList<>();
     private ArrayList<String> najpoznatijePjesem = new ArrayList<>();
 
     private String urlZaSliku = "https://f4.bcbits.com/img/a0252633309_10.jpg";
-
-
-
 
     // I korak za Parcel interfejs
     // This is where you will write your member variables in Parcel. Here you
@@ -82,8 +79,10 @@ public class Muzicar implements Parcelable
         this.ime = ime;
         this.prezime = prezime;
         this.zanr = zanr;
-        this.cv = cv;
     }
+
+    public Muzicar()
+    {}
 
     //GETTERI I SETTERI ( III korak za Parcel interfejs)
     public String getIme() {
@@ -118,11 +117,11 @@ public class Muzicar implements Parcelable
         this.urlZaSliku = urlZaSliku;
     }
 
-    public ArrayList<String> getAlbumi() {
+    public ArrayList<Album> getAlbumi() {
         return albumi;
     }
 
-    public void setAlbumi(ArrayList<String> albumi) {
+    public void setAlbumi(ArrayList<Album> albumi) {
         this.albumi = albumi;
     }
 

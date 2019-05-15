@@ -2,25 +2,20 @@ package ba.unsa.etf.rma.rma_t1_z1.Fragmenti;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-
+import ba.unsa.etf.rma.rma_t1_z1.Adapteri.AlbumAdapter;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.PretragaSlike;
 import ba.unsa.etf.rma.rma_t1_z1.R;
@@ -35,6 +30,10 @@ public class FragmentDetaljiOMuzicaru extends Fragment
     private ImageView slika;
     private Button podijeli;
 
+    private ListView lvAlbumi;
+    private AlbumAdapter adapterAlbuma;
+    private View headerView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -48,6 +47,7 @@ public class FragmentDetaljiOMuzicaru extends Fragment
             zanr = (TextView) iv.findViewById(R.id.mprZanr);
             slika = (ImageView) iv.findViewById(R.id.mprSlika);
             podijeli = (Button) iv.findViewById(R.id.mprPodijeli);
+            lvAlbumi = (ListView) iv.findViewById(R.id.lvAlbumi);
 
             //Postavljanje i ostalih vrijednosti na isti način
             ime.setText(muzicar.getIme());
@@ -55,6 +55,29 @@ public class FragmentDetaljiOMuzicaru extends Fragment
             zanr.setText(muzicar.getZanr());
 
             zanr.setBackgroundColor(Color.RED);
+
+            headerView = getLayoutInflater().inflate(R.layout.footer, null);
+
+            TextView naslovHeadera;
+            if(headerView instanceof TextView)
+            {
+                naslovHeadera = (TextView) headerView;
+                naslovHeadera.setText("ALBUMI:");
+                lvAlbumi.addHeaderView(headerView);
+                adapterAlbuma = new AlbumAdapter(this.getContext(), R.layout.adapter_album, muzicar.getAlbumi());
+                lvAlbumi.setAdapter(adapterAlbuma);
+
+                lvAlbumi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                    {
+                        //AKO SLIKNE NA NEKI OD ALBUMA, TREBA DA MU SE OTOVRI SPOTIFY STRANICA TA TAJ ALBUM
+                    }
+                });
+            }
+
+
+
 
             //POSTAVLJANJE SLIKE U ZAVISNOSTI OD ELEMENTA
             //String imeSlike = muzicar.getZanr().toLowerCase().trim();

@@ -1,6 +1,5 @@
 package ba.unsa.etf.rma.rma_t1_z1.Fragmenti;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.app.Fragment;
@@ -11,11 +10,10 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import ba.unsa.etf.rma.rma_t1_z1.Klase.MojAdapter;
+import ba.unsa.etf.rma.rma_t1_z1.Adapteri.MojAdapter;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.PretragaMuzicara;
 import ba.unsa.etf.rma.rma_t1_z1.R;

@@ -97,14 +97,40 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
             JSONObject nizMuzicara = jo.getJSONObject("artists");
             JSONArray items = nizMuzicara.getJSONArray("items");
 
+            Muzicar novi;
             for (int i = 0; i < 5; i++)
             {
+                novi = new Muzicar();
+
                 JSONObject jedanMuzicar = items.getJSONObject(i);
                 String name = jedanMuzicar.getString("name");
+
+                //razdvajanje imena i prezimena
+                String[] imeIPrezime = name.split(" ");
+
+                if(imeIPrezime.length == 2)
+                {
+                    novi.setIme(imeIPrezime[0]);
+                    novi.setPrezime(imeIPrezime[1]);
+                }
+                else
+                    novi.setIme(name);
+
                 String artist_ID = jedanMuzicar.getString("id");
                 //Ovdje trebate dodati kreiranje objekta Muzičara i dodavanje u listu
                 //Ovo uradite na sličan način kako ste radili i kada ste hardkodirali
                 //podatke samo što sada koristite stvarne podatke
+
+                //svaki pjevac mora imati VALJDA barem jedan zandr kojem pripada
+                JSONArray zanrovi = jedanMuzicar.getJSONArray("genres");
+
+                if(zanrovi.length() > 0)
+                {
+                    String jedanZanr = zanrovi.getString(0);
+                    novi.setZanr(jedanZanr);
+                }
+                else
+                    novi.setZanr("pop");
 
                 JSONArray oSlici = jedanMuzicar.getJSONArray("images");
                 String urlSlike = "https://f4.bcbits.com/img/a0252633309_10.jpg"; //ovo je slika "no photo"
@@ -115,15 +141,6 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
                     JSONObject detaljiOSlici = oSlici.getJSONObject(0);
                     urlSlike = detaljiOSlici.getString("url");
                 }
-
-                //razdvajanje imena i prezimena
-                String[] imeIPrezime = name.split(" ");
-
-                Muzicar novi;
-                if(imeIPrezime.length == 2)
-                novi = new Muzicar(imeIPrezime[0], imeIPrezime[1],"POP");
-                else
-                    novi = new Muzicar(name, "","POP");
 
                 novi.setUrlZaSliku(urlSlike);
 
@@ -187,14 +204,21 @@ public class PretragaMuzicara extends AsyncTask<String, Integer, Void>
                 JSONObject pocetniElement = jo.getJSONObject("albums");
                 JSONArray nizAlbuma = pocetniElement.getJSONArray("items");
 
+                Album novi;
                 for (int j = 0; j < 5; j++)
                 {
+                    novi = new Album();
+
                     JSONObject jedanAlbum = nizAlbuma.getJSONObject(j);
                     String imeAlbuma = jedanAlbum.getString("name");
+                    novi.setImeAlbuma(imeAlbuma);
 
-                    rezultatPretrage.get(i).getAlbumi().add(imeAlbuma);
+                    //href - apsolut url, tj url koji sadrzi 'cijeli' url, za razliku od relativnog
+                    String hrefJeApsolutniURL = jedanAlbum.getString("href");
+                    novi.setUrlZaAlbum(hrefJeApsolutniURL);
+
+                    rezultatPretrage.get(i).getAlbumi().add(novi);
                 }
-
                 //rezultatPretrage.get(i).getAlbumi().add("nista");
             }
             catch (MalformedURLException e)

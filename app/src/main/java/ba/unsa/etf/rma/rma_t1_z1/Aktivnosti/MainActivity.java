@@ -1,6 +1,5 @@
 package ba.unsa.etf.rma.rma_t1_z1.Aktivnosti;
 
-import android.provider.SyncStateContract;
 import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +13,7 @@ import java.util.ArrayList;
 
 import ba.unsa.etf.rma.rma_t1_z1.Fragmenti.FragmentDetaljiOMuzicaru;
 import ba.unsa.etf.rma.rma_t1_z1.Fragmenti.FragmentLista;
-import ba.unsa.etf.rma.rma_t1_z1.Klase.MojAdapter;
+import ba.unsa.etf.rma.rma_t1_z1.Adapteri.MojAdapter;
 import ba.unsa.etf.rma.rma_t1_z1.Klase.Muzicar;
 import ba.unsa.etf.rma.rma_t1_z1.R;
 
